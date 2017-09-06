@@ -1,0 +1,3318 @@
+{
+    "id": "CABG",
+    "label": "CABG-v5.0 质量监测指标报告系统v5.0临床数据的XML文件布局",
+    "fields": {
+        "CABG-0.1.1": {
+            "tips": "数据收集问题：在住院病案首页的质控医师签字栏的姓名？",
+            "id": "CABG-0.1.1",
+            "label": "1.质控医师",
+            "fields": {
+                "CABG-0.1.1.1": {
+                    "id": "CABG-0.1.1",
+                    "label": "1.质控医师",
+                    "fieldtype": "",
+                    "fieldsize": "",
+                    "limits": ""
+                },
+                "CABG-0.1.1.2": {
+                    "id": "CABG-0.1.1",
+                    "label": "2.质控护士",
+                    "fieldtype": "",
+                    "fieldsize": "",
+                    "limits": ""
+                },
+                "CABG-0.1.1.3": {
+                    "id": "CABG-0.1.1",
+                    "label": "3.质控审核医师(是指上级医师,如，主治医师，或者副主任医师)",
+                    "fieldtype": "",
+                    "fieldsize": "",
+                    "limits": ""
+                }
+            }
+        },
+        "CABG-0.1.2": {
+            "tips": "数据收集问题：在住院病案首页的质控医师签字栏的姓名？",
+            "id": "CABG-0.1.2",
+            "label": "2.患者住院号",
+            "fields": {
+                "CABG-0.1.2": {
+                    "id": "CABG-0.1.2",
+                    "label": "患者住院号",
+                    "fieldtype": "数字 字母",
+                    "fieldsize": "",
+                    "limits": "1"
+                }
+            }
+        },
+        "CABG-0.1.3": {
+            "tips": "数据收集问题：在住院病案首页的主要手术操作栏中提取ICD-9.CM-3编码与手术名称？",
+            "id": "CABG-0.1.3",
+            "label": "3. ICD-9.CM-3编码与手术名称 (质控病历提取唯一依据)",
+            "fields": {
+                "CABG-0.1.3": {
+                    "id": "CABG-0.1.3",
+                    "label": "ICD-9.CM-3编码与手术名称",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "36.10001主动脉-冠状动脉搭桥术"
+                        },
+                        {
+                            "value": "b",
+                            "name": "36.12001主动脉-二支冠状动脉搭桥术"
+                        },
+                        {
+                            "value": "c",
+                            "name": "36.13001主动脉-三支冠状动脉搭桥术"
+                        },
+                        {
+                            "value": "d",
+                            "name": "36.14001主动脉-多支冠状动脉搭桥术"
+                        },
+                        {
+                            "value": "e",
+                            "name": "36.15001单侧乳内动脉-冠状动脉搭桥术"
+                        },
+                        {
+                            "value": "f",
+                            "name": "36.16001双侧乳内动脉-冠状动脉搭桥术"
+                        },
+                        {
+                            "value": "g",
+                            "name": "36.17001胃网膜动脉-冠状动脉搭桥术"
+                        }
+                    ]
+                }
+            }
+        },
+        "CABG-0.1.4": {
+            "tips": "数据收集问题：在住院病案首页的主要诊断栏中提取ICD-10编码与疾病名称？",
+            "id": "CABG-0.1.4",
+            "label": "4. ICD-10编码与疾病名称",
+            "fields": {
+                "CABG-0.1.4": {
+                    "id": "CABG-0.1.4",
+                    "label": "ICD-10编码与疾病名称",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "I25.100动脉硬化性心脏病"
+                        },
+                        {
+                            "value": "b",
+                            "name": "I25.101冠状动脉狭窄"
+                        },
+                        {
+                            "value": "c",
+                            "name": "I25.102冠状动脉粥样硬化"
+                        },
+                        {
+                            "value": "d",
+                            "name": "I25.103冠状动脉粥样硬化性心脏病"
+                        },
+                        {
+                            "value": "e",
+                            "name": "I25.200陈旧性心肌梗死"
+                        }
+                    ]
+                }
+            }
+        },
+        "CABG-0.2.1": {
+            "tips": "数据收集问题：在住院病案首页中提取年龄,出生日期的信息？",
+            "id": "CABG-0.2.1",
+            "label": "1.出生日期",
+            "fields": {
+                "CABG-0.2.1": {
+                    "id": "CABG-0.2.1",
+                    "label": "出生日期",
+                    "fieldtype": "日期",
+                    "fieldsize": "10",
+                    "limits": "1"
+                }
+            }
+        },
+        "CABG-0.2.2": {
+            "tips": "数据收集问题：在住院病案首页或急诊病历中提取入院日期时间的信息？",
+            "id": "CABG-0.2.2",
+            "label": "2.入院日期时间",
+            "fields": {
+                "CABG-0.2.2.1": {
+                    "id": "CABG-0.2.2",
+                    "label": "入院日期",
+                    "fieldtype": "日期",
+                    "fieldsize": "10",
+                    "limits": "1"
+                },
+                "CABG-0.2.2.2": {
+                    "id": "CABG-0.2.2",
+                    "label": "入院时间",
+                    "fieldtype": "时间",
+                    "fieldsize": "5",
+                    "limits": "1"
+                }
+            }
+        },
+        "CABG-0.2.3": {
+            "tips": "数据收集问题：在住院病案首页中提取出院日期的信息？",
+            "id": "CABG-0.2.3",
+            "label": "3.出院日期",
+            "fields": {
+                "CABG-0.2.3": {
+                    "id": "CABG-0.2.3",
+                    "label": "出院日期",
+                    "fieldtype": "日期",
+                    "fieldsize": "10",
+                    "limits": "1"
+                }
+            }
+        },
+        "CABG-0.2.4": {
+            "tips": "数据收集问题：在住院病案首页或手术记录或麻醉记录中提取手术起始时间日期的信息？",
+            "id": "CABG-0.2.4",
+            "label": "4.手术日期",
+            "fields": {
+                "CABG-0.2.4.1": {
+                    "id": "CABG-0.2.4",
+                    "label": "手术起始日期",
+                    "fieldtype": "日期",
+                    "fieldsize": "10",
+                    "limits": "1"
+                },
+                "CABG-0.2.4.2": {
+                    "id": "CABG-0.2.4",
+                    "label": "手术起始时间",
+                    "fieldtype": "时间",
+                    "fieldsize": "5",
+                    "limits": "1"
+                }
+            }
+        },
+        "CABG-0.2.5": {
+            "tips": "数据收集问题：在住院病案首页或手术记录或麻醉记录中提取手术终止时间日期的信息？",
+            "id": "CABG-0.2.5",
+            "label": "4.手术日期",
+            "fields": {
+                "CABG-0.2.5.1": {
+                    "id": "CABG-0.2.5",
+                    "label": "手术终止日期",
+                    "fieldtype": "日期",
+                    "fieldsize": "10",
+                    "limits": "1"
+                },
+                "CABG-0.2.5.2": {
+                    "id": "CABG-0.2.5",
+                    "label": "手术终止时间",
+                    "fieldtype": "时间",
+                    "fieldsize": "5",
+                    "limits": "1"
+                }
+            }
+        },
+        "CABG-0.3.1": {
+            "tips": "数据收集问题：在住院病案首页或急诊病历中提取诊疗其他信息？",
+            "id": "CABG-0.3.1",
+            "label": "诊疗其他信息",
+            "fields": {
+                "CABG-0.3.1": {
+                    "id": "CABG-0.3.1",
+                    "label": "费用支付方式",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "城镇职工基本医疗保险"
+                        },
+                        {
+                            "value": "b",
+                            "name": "城乡居民基本医疗保险"
+                        },
+                        {
+                            "value": "c",
+                            "name": "城镇居民基本医疗保险（做成可删减选项，将来这个选项可能去掉）"
+                        },
+                        {
+                            "value": "d",
+                            "name": "新型农村合作医疗保险（做成可删减选项，将来这个选项可能去掉）"
+                        },
+                        {
+                            "value": "e",
+                            "name": "贫困救助"
+                        },
+                        {
+                            "value": "f",
+                            "name": "商业医疗保险"
+                        },
+                        {
+                            "value": "g",
+                            "name": "公费医疗"
+                        },
+                        {
+                            "value": "h",
+                            "name": "全自费"
+                        },
+                        {
+                            "value": "i",
+                            "name": "其他社会保险"
+                        },
+                        {
+                            "value": "j",
+                            "name": "其他"
+                        }
+                    ]
+                },
+                "CABG-0.3.2": {
+                    "id": "CABG-0.3.2",
+                    "label": "收入住院途径",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "门诊收入院"
+                        },
+                        {
+                            "value": "b",
+                            "name": "急诊收入院"
+                        },
+                        {
+                            "value": "c",
+                            "name": "院内临床科室转来"
+                        },
+                        {
+                            "value": "d",
+                            "name": "其他"
+                        }
+                    ]
+                },
+                "CABG-0.3.3": {
+                    "id": "CABG-0.3.3",
+                    "label": "到院交通工具",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "救护车"
+                        },
+                        {
+                            "value": "b",
+                            "name": "出租车或自家车"
+                        },
+                        {
+                            "value": "c",
+                            "name": "其他"
+                        }
+                    ]
+                }
+            }
+        },
+        "CABG-1.1.1": {
+            "tips": "数据收集问题：在住院病历的术前讨论记录中是否有实施手术前超声心动图评估的记录？",
+            "id": "CABG-1.1.1",
+            "label": "1.手术前实施超声心动图",
+            "fields": {
+                "CABG-1.1.1": {
+                    "id": "CABG-1.1.1",
+                    "label": "是否实施实施手术前的超声心动图评估?",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "y",
+                            "name": "选择y者为是,"
+                        },
+                        {
+                            "value": "n",
+                            "name": "选择n者为否,"
+                        }
+                    ]
+                }
+            }
+        },
+        "CABG-1.1.2.1": {
+            "tips": "数据收集问题：调查住院病历之病程记录、手术前记录、超声心动图报告等相关记录中，实施左室功能评估结果的记录。主要采集以下四项信息？",
+            "id": "CABG-1.1.2.1",
+            "label": "2.左室功能评估结果",
+            "fields": {
+                "CABG-1.1.2.1": {
+                    "id": "CABG-1.1.2.1",
+                    "label": "①左室射血分数（LVEF）测量值",
+                    "fieldtype": "数字",
+                    "fieldsize": "2",
+                    "limits": "1"
+                },
+                "CABG-1.1.2.2": {
+                    "id": "CABG-1.1.2.2",
+                    "label": "评估结果的选择",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "＞50%"
+                        },
+                        {
+                            "value": "b",
+                            "name": "30-50%"
+                        },
+                        {
+                            "value": "c",
+                            "name": "＜30%"
+                        }
+                    ]
+                },
+                "CABG-1.1.2.3": {
+                    "id": "CABG-1.1.2.3",
+                    "label": "②左室舒张末内径测量值",
+                    "fieldtype": "数字",
+                    "fieldsize": "2",
+                    "limits": "1"
+                },
+                "CABG-1.1.2.4": {
+                    "id": "CABG-1.1.2.4",
+                    "label": "③是否左室室壁瘤?",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "y",
+                            "name": "选择y者为是,"
+                        },
+                        {
+                            "value": "n",
+                            "name": "选择n者为否,"
+                        }
+                    ]
+                },
+                "CABG-1.1.2.5": {
+                    "id": "CABG-1.1.2.5",
+                    "label": "④肺动脉收缩压测量值",
+                    "fieldtype": "数字",
+                    "fieldsize": "2",
+                    "limits": "1"
+                },
+                "CABG-1.1.2.6": {
+                    "id": "CABG-1.1.2.6",
+                    "label": "评估结果的选择",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "≤60mmHg"
+                        },
+                        {
+                            "value": "b",
+                            "name": "＞60mmHg"
+                        }
+                    ]
+                }
+            }
+        },
+        "CABG-1.2.1": {
+            "tips": "数据收集问题：在住院病历的术前讨论记录中是否有实施手术前冠状动脉造影的记录？",
+            "id": "CABG-1.2.1",
+            "label": "1.手术前实施冠状动脉造影",
+            "fields": {
+                "CABG-1.2.1": {
+                    "id": "CABG-1.2.1",
+                    "label": "是否实施实施手术前的冠状动脉造影评估?",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "y",
+                            "name": "选择y者,为是,"
+                        },
+                        {
+                            "value": "n",
+                            "name": "选择n者,为否,"
+                        }
+                    ]
+                }
+            }
+        },
+        "CABG-1.2.2.1": {
+            "tips": "数据收集问题：住院病历之病程记录、手术前记录、冠状动脉造影报告等相关记录中，冠状动脉病变评估结果的记录。主要采集以下二项信息？",
+            "id": "CABG-1.2.2.1",
+            "label": "2.左室功能评估结果",
+            "fields": {
+                "CABG-1.2.2.1": {
+                    "id": "CABG-1.2.2.1",
+                    "label": "1.冠状动脉病变数量",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "1支"
+                        },
+                        {
+                            "value": "b",
+                            "name": "2支"
+                        },
+                        {
+                            "value": "c",
+                            "name": "3支"
+                        },
+                        {
+                            "value": "d",
+                            "name": "≥4支"
+                        }
+                    ]
+                },
+                "CABG-1.2.2.2": {
+                    "id": "CABG-1.2.2.2",
+                    "label": "2.血管病变主要位置",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "〇A.左主干LM病变（病变狭窄超过50%）"
+                        },
+                        {
+                            "value": "b",
+                            "name": "〇B.前降支LAD系统病变（含左前降支、对角支、中间支病变狭窄超过50%）"
+                        },
+                        {
+                            "value": "c",
+                            "name": "〇C.回旋支LCX系统病变（含回旋支、钝缘支病变狭窄超过50%）"
+                        },
+                        {
+                            "value": "d",
+                            "name": "〇D.右冠脉RCA系统病变（含右冠脉、后降支、左室后支病变狭窄超过50%）"
+                        },
+                        {
+                            "value": "e",
+                            "name": "〇E.血管桥病变"
+                        }
+                    ]
+                }
+            }
+        },
+        "CABG-1.3.1": {
+            "tips": "数据收集问题：在住院病历的术前讨论记录中是否有实施手术前的危险评估的记录？",
+            "id": "CABG-1.3.1",
+            "label": "2.实施手术前的危险评估",
+            "fields": {
+                "CABG-1.3.1": {
+                    "id": "CABG-1.3.1",
+                    "label": "是否实施实施手术前的危险评估?",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "y",
+                            "name": "选择y者为是,"
+                        },
+                        {
+                            "value": "n",
+                            "name": "选择n者为否,"
+                        }
+                    ]
+                }
+            }
+        },
+        "CABG-1.3.2": {
+            "tips": "数据收集问题：在住院病历的术前讨论记录中是否有实施手术前的危险评估评估结果的记录？",
+            "id": "CABG-1.3.2",
+            "label": "2.实施手术前的危险评估",
+            "fields": {
+                "CABG-1.3.2": {
+                    "id": "CABG-1.3.2",
+                    "label": "成人心脏手术术前危险因素评分值",
+                    "fieldtype": "数字",
+                    "fieldsize": "1",
+                    "limits": "1"
+                },
+                "CABG-1.3.3": {
+                    "id": "CABG-1.3.3",
+                    "label": "评估结果分层的选择",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "0, 1 or 2分，病人轻度危险，预期死亡率0.8%"
+                        },
+                        {
+                            "value": "b",
+                            "name": "3, 4 or 5分，病人中度危险，预期死亡率3%"
+                        },
+                        {
+                            "value": "c",
+                            "name": "≥ 6分，病人重度危险，预期死亡率11.2%"
+                        }
+                    ]
+                }
+            }
+        },
+        "CABG-1.4": {
+            "tips": "数据收集问题：在调查住院病历之病程记录、手术前记录、手术前医嘱、治疗单和护理记录等相关记录中，患者手术前用药选择的记录？关注术前24小时以内用药",
+            "id": "CABG-1.4",
+            "label": "术前准备-用药",
+            "fields": {
+                "CABG-1.4": {
+                    "id": "CABG-1.4",
+                    "label": "术前准备-用药",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "静脉硝酸脂类药（术前24小时以内）"
+                        },
+                        {
+                            "value": "b",
+                            "name": "倍他受体阻滞剂（术前24小时以内）"
+                        },
+                        {
+                            "value": "c",
+                            "name": "钙离子（Ca2+）拮抗剂（术前24小时以内）"
+                        },
+                        {
+                            "value": "d",
+                            "name": "ACEl或ARB（术前24小时以内）"
+                        },
+                        {
+                            "value": "e",
+                            "name": "静脉使用儿茶酚胺类药物（术前48小时以内）"
+                        },
+                        {
+                            "value": "f",
+                            "name": "阿斯匹林（术前5天以内）"
+                        },
+                        {
+                            "value": "g",
+                            "name": "波立维（术前5天以内）"
+                        },
+                        {
+                            "value": "h",
+                            "name": "他汀类（术前5天以内）"
+                        },
+                        {
+                            "value": "i",
+                            "name": "非他汀类降脂药（术前7天以内）"
+                        }
+                    ]
+                }
+            }
+        },
+        "CABG-2.1": {
+            "tips": "数据收集问题：在住院病历的术前讨论记录中是否有实施急诊CABG手术的记录？",
+            "id": "CABG-2.1",
+            "label": "1.是否急诊手术？",
+            "fields": {
+                "CABG-2.1": {
+                    "id": "CABG-2.1",
+                    "label": "是否实施急诊CABG手术?",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "y",
+                            "name": "选择y者为是,实施急诊CABG手术"
+                        },
+                        {
+                            "value": "n",
+                            "name": "选择n者为否,"
+                        }
+                    ]
+                }
+            }
+        },
+        "CABG-2.2": {
+            "tips": "数据收集问题：在住院病历的术前讨论记录中是否有实施急诊CABG手术指征的选择的记录？",
+            "id": "CABG-2.2",
+            "label": "2.急症CABG手术指征",
+            "fields": {
+                "CABG-2.2": {
+                    "id": "CABG-2.2",
+                    "label": "急症CABG手术指征的选择",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "①直接PCI失败或不能实施；"
+                        },
+                        {
+                            "value": "b",
+                            "name": "②冠脉病变解剖适合进行急症CABG治疗；"
+                        },
+                        {
+                            "value": "c",
+                            "name": "③患者在静息状态下有大面积心肌持续缺血和（或）血流动力学障碍，非手术治疗无效；"
+                        },
+                        {
+                            "value": "d",
+                            "name": "④须同时治疗心肌梗死后相关机械性并发症（如室间隔穿孔、二尖瓣反流或游离壁破裂等）；"
+                        },
+                        {
+                            "value": "e",
+                            "name": "⑤患者出现心源性休克；"
+                        },
+                        {
+                            "value": "f",
+                            "name": "⑥严重左主干或3支血管病变，出现危及生命的室性心律失常，并考虑由心肌缺血所致。"
+                        }
+                    ]
+                }
+            }
+        },
+        "CABG-2.3": {
+            "tips": "数据收集问题：住院病历之病程记录、手术前讨论记录、术前小结、手术前医嘱中有关患者CABG手术适应症等的记录信息？",
+            "id": "CABG-2.3",
+            "label": "3.CABG手术适应症",
+            "fields": {
+                "CABG-2.3": {
+                    "id": "CABG-2.3",
+                    "label": "CABG手术适应症",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "狭窄大于50%的左主干或类左主干病变"
+                        },
+                        {
+                            "value": "b",
+                            "name": "冠状动脉三支病变狭窄大于75%"
+                        },
+                        {
+                            "value": "c",
+                            "name": "冠状动脉病变合并有左室功能受损，通过心肌血运重建能改善症状及心功能者"
+                        },
+                        {
+                            "value": "d",
+                            "name": "心肌梗死并发症如室壁瘤，室间隔穿孔，二尖瓣返流等需要同时手术矫治者"
+                        },
+                        {
+                            "value": "e",
+                            "name": "介入治疗后再狭窄或并发症者"
+                        }
+                    ]
+                }
+            }
+        },
+        "CABG-2.4": {
+            "tips": "数据收集问题：在住院病历的术前讨论记录中是否有实施手术前伴有心肌梗死并发症的记录？",
+            "id": "CABG-2.4",
+            "label": "4.CABG手术前伴有心肌梗死并发症",
+            "fields": {
+                "CABG-2.4": {
+                    "id": "CABG-2.4",
+                    "label": "手术前伴有心肌梗死并发症的选择",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "左室室壁瘤室"
+                        },
+                        {
+                            "value": "b",
+                            "name": "间隔破裂"
+                        },
+                        {
+                            "value": "c",
+                            "name": "室间隔破裂"
+                        },
+                        {
+                            "value": "d",
+                            "name": "缺血性二尖瓣返流"
+                        },
+                        {
+                            "value": "e",
+                            "name": "其他"
+                        },
+                        {
+                            "value": "UTD",
+                            "name": "无法确定或无记录"
+                        }
+                    ]
+                }
+            }
+        },
+        "CABG-2.5": {
+            "tips": "数据收集问题：在住院病历的术前讨论记录中是否有选择实施手术方法的记录？",
+            "id": "CABG-2.5",
+            "label": "5.选择手术方法",
+            "fields": {
+                "CABG-2.5": {
+                    "id": "CABG-2.5",
+                    "label": "手术方法的选择",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "单纯CABG"
+                        },
+                        {
+                            "value": "b",
+                            "name": "CABG+非CABG心脏手术"
+                        },
+                        {
+                            "value": "c",
+                            "name": "杂合（Hybrid）手术（冠状动脉搭桥术的同时在手术室辅以内科介入手术）"
+                        },
+                        {
+                            "value": "d",
+                            "name": "微创冠状动脉搭桥手术（MIDCAB）"
+                        },
+                        {
+                            "value": "e",
+                            "name": "其他"
+                        }
+                    ]
+                }
+            }
+        },
+        "CABG-3.1": {
+            "tips": "数据收集问题：在住院病历的手术记录，或麻醉记录中是否有手术时间的记录？",
+            "id": "CABG-3.1",
+            "label": "1.手术时间",
+            "fields": {
+                "CABG-3.1.1": {
+                    "id": "CABG-3.1",
+                    "label": "起始日期时间",
+                    "fieldtype": "日期",
+                    "fieldsize": "10",
+                    "limits": "1"
+                },
+                "CABG-3.1.2": {
+                    "id": "CABG-3.1",
+                    "label": "起始日期时间",
+                    "fieldtype": "时间",
+                    "fieldsize": "5",
+                    "limits": "1"
+                },
+                "CABG-3.1.3": {
+                    "id": "CABG-3.1",
+                    "label": "结束日期时间",
+                    "fieldtype": "日期",
+                    "fieldsize": "10",
+                    "limits": "1"
+                },
+                "CABG-3.1.4": {
+                    "id": "CABG-3.1",
+                    "label": "结束日期时间",
+                    "fieldtype": "时间",
+                    "fieldsize": "5",
+                    "limits": "1"
+                }
+            }
+        },
+        "CABG-3.2": {
+            "tips": "数据收集问题：在住院病历的手术记录，或麻醉记录,或体外循环记录中是否有体外循环使用时间的记录？",
+            "id": "CABG-3.2",
+            "label": "2.体外循环使用时间",
+            "fields": {
+                "CABG-3.2.1": {
+                    "id": "CABG-3.2",
+                    "label": "起始日期时间",
+                    "fieldtype": "日期",
+                    "fieldsize": "10",
+                    "limits": "1"
+                },
+                "CABG-3.2.2": {
+                    "id": "CABG-3.2",
+                    "label": "起始日期时间",
+                    "fieldtype": "时间",
+                    "fieldsize": "5",
+                    "limits": "1"
+                },
+                "CABG-3.2.3": {
+                    "id": "CABG-3.2",
+                    "label": "结朿日期时间",
+                    "fieldtype": "日期",
+                    "fieldsize": "10",
+                    "limits": "1"
+                },
+                "CABG-3.2.4": {
+                    "id": "CABG-3.2",
+                    "label": "结朿日期时间",
+                    "fieldtype": "时间",
+                    "fieldsize": "5",
+                    "limits": "1"
+                }
+            }
+        },
+        "CABG-3.3": {
+            "tips": "数据收集问题：在住院病历的术前讨论记录中是否有选择CABG非体外循环原因的记录？",
+            "id": "CABG-3.3",
+            "label": "3. CABG非体外循环原因",
+            "fields": {
+                "CABG-3.3": {
+                    "id": "CABG-3.3",
+                    "label": "急症CABG手术指征的选择",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "是医师选择 "
+                        },
+                        {
+                            "value": "b",
+                            "name": "是病人选择"
+                        },
+                        {
+                            "value": "c",
+                            "name": "有体外循环禁忌"
+                        },
+                        {
+                            "value": "d",
+                            "name": "其他原因（用文字说明）"
+                        },
+                        {
+                            "value": "UTD",
+                            "name": "无法确定或无记录"
+                        }
+                    ]
+                }
+            }
+        },
+        "CABG-3.4": {
+            "tips": "数据收集问题：住院病历之手术记录、术后小结、麻醉记录、体外循环记录中有关术中转为体外循环原因的记录信息？",
+            "id": "CABG-3.4",
+            "label": "4.术中转为体外循环原因",
+            "fields": {
+                "CABG-3.4": {
+                    "id": "CABG-3.4",
+                    "label": "术中转为体外循环原因",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "是血液动力学不稳定"
+                        },
+                        {
+                            "value": "b",
+                            "name": "是顽固性心律失常"
+                        },
+                        {
+                            "value": "c",
+                            "name": "是显露不佳"
+                        },
+                        {
+                            "value": "d",
+                            "name": "血管条件不佳"
+                        },
+                        {
+                            "value": "e",
+                            "name": "出血"
+                        },
+                        {
+                            "value": "f",
+                            "name": "其他原因（用文字说明）"
+                        },
+                        {
+                            "value": "UTD",
+                            "name": "无法确定或无记录"
+                        }
+                    ]
+                }
+            }
+        },
+        "CABG-3.5": {
+            "tips": "数据收集问题：在住院病历的术前讨论记录中是否有实施手术前伴有心肌梗死并发症的记录？",
+            "id": "CABG-3.5",
+            "label": "5.手术前伴有心肌梗死并发症",
+            "fields": {
+                "CABG-3.5": {
+                    "id": "CABG-3.5",
+                    "label": "手术前伴有心肌梗死并发症的选择",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "左室室壁瘤室"
+                        },
+                        {
+                            "value": "b",
+                            "name": "间隔破裂"
+                        },
+                        {
+                            "value": "c",
+                            "name": "室间隔破裂"
+                        },
+                        {
+                            "value": "d",
+                            "name": "缺血性二尖瓣返流"
+                        },
+                        {
+                            "value": "e",
+                            "name": "其他"
+                        },
+                        {
+                            "value": "UTD",
+                            "name": "无法确定或无记录"
+                        }
+                    ]
+                }
+            }
+        },
+        "CABG-3.6": {
+            "tips": "数据收集问题：住院病历之手术记录、术后小结、麻醉记录、体外循环记录中有关术中使用冠脉内分流器的记录信息？",
+            "id": "CABG-3.6",
+            "label": "6 术中是否使用冠脉内分流器",
+            "fields": {
+                "CABG-3.6": {
+                    "id": "CABG-3.6",
+                    "label": "是否使用冠脉内分流器?",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "y",
+                            "name": "选择y者为是"
+                        },
+                        {
+                            "value": "n",
+                            "name": "选择n者为否"
+                        }
+                    ]
+                }
+            }
+        },
+        "CABG-3.7": {
+            "tips": "数据收集问题：住院病历之手术记录、术后小结、麻醉记录、体外循环记录中有关术中使用冠脉固定装置的记录信息？",
+            "id": "CABG-3.7",
+            "label": "7. 术中是否使用冠脉固定装置",
+            "fields": {
+                "CABG-3.7": {
+                    "id": "CABG-3.7",
+                    "label": "冠脉固定装置的选择",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "吸引装置"
+                        },
+                        {
+                            "value": "b",
+                            "name": "压迫装置"
+                        },
+                        {
+                            "value": "c",
+                            "name": "丝线或网兜"
+                        },
+                        {
+                            "value": "d",
+                            "name": "其他方法（用文字说明）"
+                        },
+                        {
+                            "value": "UTD",
+                            "name": "无法确定或无记录"
+                        }
+                    ]
+                }
+            }
+        },
+        "CABG-3.8": {
+            "tips": "数据收集问题：在住院病历的术前讨论记录中是否有乳内动脉游离方式的选择记录？",
+            "id": "CABG-3.8",
+            "label": "8.乳内动脉游离方式",
+            "fields": {
+                "CABG-3.8": {
+                    "id": "CABG-3.8",
+                    "label": "乳内动脉游离方式的选择",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "未使用乳内动脉"
+                        },
+                        {
+                            "value": "b",
+                            "name": "胸腔镜"
+                        },
+                        {
+                            "value": "c",
+                            "name": "直视"
+                        },
+                        {
+                            "value": "d",
+                            "name": "胸腔镜加直视"
+                        },
+                        {
+                            "value": "e",
+                            "name": "其他方法（用文字说明）"
+                        },
+                        {
+                            "value": "UTD",
+                            "name": "无法确定或无记录"
+                        }
+                    ]
+                }
+            }
+        },
+        "CABG-3.9": {
+            "tips": "数据收集问题：住院病历之手术记录、术后小结、麻醉记录、体外循环记录中有关术中使用冠脉内分流器的记录信息？",
+            "id": "CABG-3.9",
+            "label": "9.术中使用流量测定装置",
+            "fields": {
+                "CABG-3.9.1": {
+                    "id": "CABG-3.9",
+                    "label": "是否术中使用流量测定装置?",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "y",
+                            "name": "选择y者为是"
+                        },
+                        {
+                            "value": "n",
+                            "name": "选择n者为否"
+                        }
+                    ]
+                },
+                "CABG-3.9.2": {
+                    "id": "CABG-3.9",
+                    "label": "流量测定值",
+                    "fieldtype": "数字",
+                    "fieldsize": "1",
+                    "limits": "1"
+                }
+            }
+        },
+        "CABG-3.10.1.1": {
+            "tips": "数据收集问题：住院病历之手术记录、术后小结、麻醉记录、体外循环记录中有关术中首根血管桥的选择的信息？(必选项)",
+            "id": "CABG-3.10.1.1",
+            "label": "10.1首根血管桥的选择(必选项)",
+            "fields": {
+                "CABG-3.10.1.1": {
+                    "id": "CABG-3.10.1.1",
+                    "label": "血管桥材料",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "左乳房内动脉"
+                        },
+                        {
+                            "value": "b",
+                            "name": "右乳房内动脉"
+                        },
+                        {
+                            "value": "c",
+                            "name": "大隐静脉"
+                        },
+                        {
+                            "value": "d",
+                            "name": "桡动脉"
+                        },
+                        {
+                            "value": "e",
+                            "name": "带蒂胃网膜动脉"
+                        },
+                        {
+                            "value": "f",
+                            "name": "其他肢体动静脉"
+                        },
+                        {
+                            "value": "g",
+                            "name": "其他（用文字说明）"
+                        }
+                    ]
+                },
+                "CABG-3.10.1.2": {
+                    "id": "CABG-3.10.1.2",
+                    "label": "近端吻合口位置",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "主动脉根部"
+                        },
+                        {
+                            "value": "b",
+                            "name": "带蒂乳房内动脉"
+                        },
+                        {
+                            "value": "c",
+                            "name": "带蒂胃网膜动脉"
+                        },
+                        {
+                            "value": "f",
+                            "name": "其他（用文字说明）"
+                        }
+                    ]
+                },
+                "CABG-3.10.1.3": {
+                    "id": "CABG-3.10.1.3",
+                    "label": "远端吻合口位置",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "左主干"
+                        },
+                        {
+                            "value": "b",
+                            "name": "左前降支"
+                        },
+                        {
+                            "value": "c",
+                            "name": "对角支"
+                        },
+                        {
+                            "value": "d",
+                            "name": "中间支"
+                        },
+                        {
+                            "value": "e",
+                            "name": "回旋支"
+                        },
+                        {
+                            "value": "f",
+                            "name": "钝缘支"
+                        },
+                        {
+                            "value": "g",
+                            "name": "右主干"
+                        },
+                        {
+                            "value": "h",
+                            "name": "后降支"
+                        },
+                        {
+                            "value": "i",
+                            "name": "左室后支"
+                        }
+                    ]
+                },
+                "CABG-3.10.1.4": {
+                    "id": "CABG-3.10.1.4",
+                    "label": "是否是序贯桥?",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "y",
+                            "name": "选择y者为是"
+                        },
+                        {
+                            "value": "n",
+                            "name": "选择n者为否"
+                        }
+                    ]
+                }
+            }
+        },
+        "CABG-3.10.2.1": {
+            "tips": "数据收集问题：住院病历之手术记录、术后小结、麻醉记录、体外循环记录中有关术中第二根血管桥的选择的信息？(可选项)",
+            "id": "CABG-3.10.2.1",
+            "label": "10.2第二根血管桥的选择(可选项)",
+            "fields": {
+                "CABG-3.10.2.1": {
+                    "id": "CABG-3.10.2.1",
+                    "label": "血管桥材料",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "左乳房内动脉"
+                        },
+                        {
+                            "value": "b",
+                            "name": "右乳房内动脉"
+                        },
+                        {
+                            "value": "c",
+                            "name": "大隐静脉"
+                        },
+                        {
+                            "value": "d",
+                            "name": "桡动脉"
+                        },
+                        {
+                            "value": "e",
+                            "name": "带蒂胃网膜动脉"
+                        },
+                        {
+                            "value": "f",
+                            "name": "其他肢体动静脉"
+                        },
+                        {
+                            "value": "g",
+                            "name": "其他（用文字说明）"
+                        }
+                    ]
+                },
+                "CABG-3.10.2.2": {
+                    "id": "CABG-3.10.2.2",
+                    "label": "近端吻合口位置",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "主动脉根部"
+                        },
+                        {
+                            "value": "b",
+                            "name": "带蒂乳房内动脉"
+                        },
+                        {
+                            "value": "c",
+                            "name": "带蒂胃网膜动脉"
+                        },
+                        {
+                            "value": "f",
+                            "name": "其他（用文字说明）"
+                        }
+                    ]
+                },
+                "CABG-3.10.2.3": {
+                    "id": "CABG-3.10.2.3",
+                    "label": "远端吻合口位置",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "左主干"
+                        },
+                        {
+                            "value": "b",
+                            "name": "左前降支"
+                        },
+                        {
+                            "value": "c",
+                            "name": "对角支"
+                        },
+                        {
+                            "value": "d",
+                            "name": "中间支"
+                        },
+                        {
+                            "value": "e",
+                            "name": "回旋支"
+                        },
+                        {
+                            "value": "f",
+                            "name": "钝缘支"
+                        },
+                        {
+                            "value": "g",
+                            "name": "右主干"
+                        },
+                        {
+                            "value": "h",
+                            "name": "后降支"
+                        },
+                        {
+                            "value": "i",
+                            "name": "左室后支"
+                        }
+                    ]
+                },
+                "CABG-3.10.2.4": {
+                    "id": "CABG-3.10.2.4",
+                    "label": "是否是序贯桥?",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "y",
+                            "name": "选择y者为是"
+                        },
+                        {
+                            "value": "n",
+                            "name": "选择n者为否"
+                        }
+                    ]
+                }
+            }
+        },
+        "CABG-3.10.3.1": {
+            "tips": "数据收集问题：住院病历之手术记录、术后小结、麻醉记录、体外循环记录中有关术中第三根血管桥的选择的信息？(可选项)",
+            "id": "CABG-3.10.3.1",
+            "label": "10.3 第三根血管桥的选择(可选项)",
+            "fields": {
+                "CABG-3.10.3.1": {
+                    "id": "CABG-3.10.3.1",
+                    "label": "血管桥材料",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "左乳房内动脉"
+                        },
+                        {
+                            "value": "b",
+                            "name": "右乳房内动脉"
+                        },
+                        {
+                            "value": "c",
+                            "name": "大隐静脉"
+                        },
+                        {
+                            "value": "d",
+                            "name": "桡动脉"
+                        },
+                        {
+                            "value": "e",
+                            "name": "带蒂胃网膜动脉"
+                        },
+                        {
+                            "value": "f",
+                            "name": "其他肢体动静脉"
+                        },
+                        {
+                            "value": "g",
+                            "name": "其他（用文字说明）"
+                        }
+                    ]
+                },
+                "CABG-3.10.3.2": {
+                    "id": "CABG-3.10.3.2",
+                    "label": "近端吻合口位置",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "主动脉根部"
+                        },
+                        {
+                            "value": "b",
+                            "name": "带蒂乳房内动脉"
+                        },
+                        {
+                            "value": "c",
+                            "name": "带蒂胃网膜动脉"
+                        },
+                        {
+                            "value": "f",
+                            "name": "其他（用文字说明）"
+                        }
+                    ]
+                },
+                "CABG-3.10.3.3": {
+                    "id": "CABG-3.10.3.3",
+                    "label": "远端吻合口位置",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "左主干"
+                        },
+                        {
+                            "value": "b",
+                            "name": "左前降支"
+                        },
+                        {
+                            "value": "c",
+                            "name": "对角支"
+                        },
+                        {
+                            "value": "d",
+                            "name": "中间支"
+                        },
+                        {
+                            "value": "e",
+                            "name": "回旋支"
+                        },
+                        {
+                            "value": "f",
+                            "name": "钝缘支"
+                        },
+                        {
+                            "value": "g",
+                            "name": "右主干"
+                        },
+                        {
+                            "value": "h",
+                            "name": "后降支"
+                        },
+                        {
+                            "value": "i",
+                            "name": "左室后支"
+                        }
+                    ]
+                },
+                "CABG-3.10.3.4": {
+                    "id": "CABG-3.10.3.4",
+                    "label": "是否是序贯桥?",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "y",
+                            "name": "选择y者为是"
+                        },
+                        {
+                            "value": "n",
+                            "name": "选择n者为否"
+                        }
+                    ]
+                }
+            }
+        },
+        "CABG-3.10.4.1": {
+            "tips": "数据收集问题：住院病历之手术记录、术后小结、麻醉记录、体外循环记录中有关术中第四根血管桥的选择的信息？(可选项)",
+            "id": "CABG-3.10.4.1",
+            "label": "10.4第四根血管桥的选择(可选项)",
+            "fields": {
+                "CABG-3.10.4.1": {
+                    "id": "CABG-3.10.4.1",
+                    "label": "血管桥材料",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "左乳房内动脉"
+                        },
+                        {
+                            "value": "b",
+                            "name": "右乳房内动脉"
+                        },
+                        {
+                            "value": "c",
+                            "name": "大隐静脉"
+                        },
+                        {
+                            "value": "d",
+                            "name": "桡动脉"
+                        },
+                        {
+                            "value": "e",
+                            "name": "带蒂胃网膜动脉"
+                        },
+                        {
+                            "value": "f",
+                            "name": "其他肢体动静脉"
+                        },
+                        {
+                            "value": "g",
+                            "name": "其他（用文字说明）"
+                        }
+                    ]
+                },
+                "CABG-3.10.4.2": {
+                    "id": "CABG-3.10.4.2",
+                    "label": "近端吻合口位置",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "主动脉根部"
+                        },
+                        {
+                            "value": "b",
+                            "name": "带蒂乳房内动脉"
+                        },
+                        {
+                            "value": "c",
+                            "name": "带蒂胃网膜动脉"
+                        },
+                        {
+                            "value": "f",
+                            "name": "其他（用文字说明）"
+                        }
+                    ]
+                },
+                "CABG-3.10.4.3": {
+                    "id": "CABG-3.10.4.3",
+                    "label": "远端吻合口位置",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "左主干"
+                        },
+                        {
+                            "value": "b",
+                            "name": "左前降支"
+                        },
+                        {
+                            "value": "c",
+                            "name": "对角支"
+                        },
+                        {
+                            "value": "d",
+                            "name": "中间支"
+                        },
+                        {
+                            "value": "e",
+                            "name": "回旋支"
+                        },
+                        {
+                            "value": "f",
+                            "name": "钝缘支"
+                        },
+                        {
+                            "value": "g",
+                            "name": "右主干"
+                        },
+                        {
+                            "value": "h",
+                            "name": "后降支"
+                        },
+                        {
+                            "value": "i",
+                            "name": "左室后支"
+                        }
+                    ]
+                },
+                "CABG-3.10.4.4": {
+                    "id": "CABG-3.10.4.4",
+                    "label": "是否是序贯桥?",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "y",
+                            "name": "选择y者为是"
+                        },
+                        {
+                            "value": "n",
+                            "name": "选择n者为否"
+                        }
+                    ]
+                }
+            }
+        },
+        "CABG-3.10.5.1": {
+            "tips": "数据收集问题：住院病历之手术记录、术后小结、麻醉记录、体外循环记录中有关术中第五根血管桥的选择的信息？(可选项)",
+            "id": "CABG-3.10.5.1",
+            "label": "10.5第五根血管桥的选择(可选项)",
+            "fields": {
+                "CABG-3.10.5.1": {
+                    "id": "CABG-3.10.5.1",
+                    "label": "血管桥材料",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "左乳房内动脉"
+                        },
+                        {
+                            "value": "b",
+                            "name": "右乳房内动脉"
+                        },
+                        {
+                            "value": "c",
+                            "name": "大隐静脉"
+                        },
+                        {
+                            "value": "d",
+                            "name": "桡动脉"
+                        },
+                        {
+                            "value": "e",
+                            "name": "带蒂胃网膜动脉"
+                        },
+                        {
+                            "value": "f",
+                            "name": "其他肢体动静脉"
+                        },
+                        {
+                            "value": "g",
+                            "name": "其他（用文字说明）"
+                        }
+                    ]
+                },
+                "CABG-3.10.5.2": {
+                    "id": "CABG-3.10.5.2",
+                    "label": "近端吻合口位置",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "主动脉根部"
+                        },
+                        {
+                            "value": "b",
+                            "name": "带蒂乳房内动脉"
+                        },
+                        {
+                            "value": "c",
+                            "name": "带蒂胃网膜动脉"
+                        },
+                        {
+                            "value": "f",
+                            "name": "其他（用文字说明）"
+                        }
+                    ]
+                },
+                "CABG-3.10.5.3": {
+                    "id": "CABG-3.10.5.3",
+                    "label": "远端吻合口位置",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "左主干"
+                        },
+                        {
+                            "value": "b",
+                            "name": "左前降支"
+                        },
+                        {
+                            "value": "c",
+                            "name": "对角支"
+                        },
+                        {
+                            "value": "d",
+                            "name": "中间支"
+                        },
+                        {
+                            "value": "e",
+                            "name": "回旋支"
+                        },
+                        {
+                            "value": "f",
+                            "name": "钝缘支"
+                        },
+                        {
+                            "value": "g",
+                            "name": "右主干"
+                        },
+                        {
+                            "value": "h",
+                            "name": "后降支"
+                        },
+                        {
+                            "value": "i",
+                            "name": "左室后支"
+                        }
+                    ]
+                },
+                "CABG-3.10.5.4": {
+                    "id": "CABG-3.10.5.4",
+                    "label": "是否是序贯桥?",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "y",
+                            "name": "选择y者为是"
+                        },
+                        {
+                            "value": "n",
+                            "name": "选择n者为否"
+                        }
+                    ]
+                }
+            }
+        },
+        "CABG-4.1": {
+            "tips": "数据收集问题：住院病历用药医嘱记录,或麻醉记录中有关预防性使用抗菌药物的记录？",
+            "id": "CABG-4.1",
+            "label": "1.预防性使用抗菌药物",
+            "fields": {
+                "CABG-4.1": {
+                    "id": "CABG-4.1",
+                    "label": "预防性使用抗菌药物",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "y",
+                            "name": "选择使用y者,"
+                        },
+                        {
+                            "value": "n",
+                            "name": "选择不使用n者,"
+                        }
+                    ]
+                }
+            }
+        },
+        "CABG-4.2": {
+            "tips": "数据收集问题：住院病历用药医嘱记录,或麻醉记录中有关选择预防性使用抗菌药物名称的记录？",
+            "id": "CABG-4.2",
+            "label": "2.预防性抗菌药物选择",
+            "fields": {
+                "CABG-4.2": {
+                    "id": "CABG-4.2",
+                    "label": "预防性抗菌药物选择",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "青霉素类（青霉素、阿莫西林等）"
+                        },
+                        {
+                            "value": "b",
+                            "name": "多西环素（强力霉素）"
+                        },
+                        {
+                            "value": "c",
+                            "name": "大环内酯类"
+                        },
+                        {
+                            "value": "d",
+                            "name": "第一代或第二代头孢菌素（头孢呋辛、头孢丙烯、头孢克罗等）"
+                        },
+                        {
+                            "value": "e",
+                            "name": "喹诺酮类（如左氧氟沙星、莫西沙星等）"
+                        },
+                        {
+                            "value": "f",
+                            "name": "β-内酰胺类/β-内酰胺酶抑制剂（如阿莫西林/克拉维酸、氨苄西林/舒巴坦）"
+                        },
+                        {
+                            "value": "g",
+                            "name": "其他（需注明抗菌药名称）"
+                        }
+                    ]
+                }
+            }
+        },
+        "CABG-4.3": {
+            "tips": "数据收集问题：在住院病历的术前讨论，或术前小结是否有使用规范之外其他抗菌药物的a至d项之一原因的记录？",
+            "id": "CABG-4.3",
+            "label": "3.选用其他类抗菌药物的因素",
+            "fields": {
+                "CABG-4.3": {
+                    "id": "CABG-4.3",
+                    "label": "选用其他类抗菌药物的因素",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "在病历中的主要诊断与次要诊断为感染者"
+                        },
+                        {
+                            "value": "b",
+                            "name": "有记录明示手术前患者正处在使用抗菌药物治疗感染的进程之中"
+                        },
+                        {
+                            "value": "c",
+                            "name": "临床医师认为有使用规范内的抗菌药物治疗的禁忌症者"
+                        },
+                        {
+                            "value": "d",
+                            "name": "甲氧西林葡萄球菌发生率高的医疗机构，可选用去甲万古霉素预防感染"
+                        },
+                        {
+                            "value": "e",
+                            "name": "其他因素（请用不超过十个字的说明）"
+                        }
+                    ]
+                }
+            }
+        },
+        "CABG-4.4": {
+            "tips": "数据收集问题：在住院病历的手术记录，或麻醉记录中是否有术前使用首剂抗菌药物起始时间的记录？",
+            "id": "CABG-4.4",
+            "label": "4.术前使用首剂抗菌药物起始时间",
+            "fields": {
+                "CABG-4.4.1": {
+                    "id": "CABG-4.4",
+                    "label": "起始日期",
+                    "fieldtype": "日期",
+                    "fieldsize": "10",
+                    "limits": "1"
+                },
+                "CABG-4.4.2": {
+                    "id": "CABG-4.4",
+                    "label": "起始日期",
+                    "fieldtype": "时间",
+                    "fieldsize": "5",
+                    "limits": "1"
+                }
+            }
+        },
+        "CABG-4.5.1": {
+            "tips": "数据收集问题：在住院病历的手术记录，或麻醉记录中是否有手术时间≥3小时,或术中出血量≥1500ml时术中追加抗菌药物的记录？",
+            "id": "CABG-4.5.1",
+            "label": "5.术中追加抗菌药物",
+            "fields": {
+                "CABG-4.5.1.1": {
+                    "id": "CABG-4.5.1",
+                    "label": "手术时间≥3小时?",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "y",
+                            "name": "选择y者为是,"
+                        },
+                        {
+                            "value": "n",
+                            "name": "选择n者为否,"
+                        }
+                    ]
+                },
+                "CABG-4.5.1.2": {
+                    "id": "CABG-4.5.1",
+                    "label": "术中追加抗菌药物?",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "y",
+                            "name": "选择y者为是,"
+                        },
+                        {
+                            "value": "n",
+                            "name": "选择n者为否,"
+                        }
+                    ]
+                },
+                "CABG-4.5.2.3": {
+                    "id": "CABG-4.5.2",
+                    "label": "术中出血量≥1500ml?",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "y",
+                            "name": "选择y者为是,"
+                        },
+                        {
+                            "value": "n",
+                            "name": "选择n者为否,"
+                        }
+                    ]
+                },
+                "CABG-4.5.2.4": {
+                    "id": "CABG-4.5.2",
+                    "label": "术中追加抗菌药物?",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "y",
+                            "name": "选择y者为是,"
+                        },
+                        {
+                            "value": "n",
+                            "name": "选择n者为否,"
+                        }
+                    ]
+                }
+            }
+        },
+        "CABG-4.6.1": {
+            "tips": "数据收集问题：在住院病历的术后长期医嘱中记录中是否有术后抗菌药物停止使用时间的记录？",
+            "id": "CABG-4.6.1",
+            "label": "6.术后抗菌药物停止使用时间",
+            "fields": {
+                "CABG-4.6.1.1": {
+                    "id": "CABG-4.6.1",
+                    "label": "停止使用日期",
+                    "fieldtype": "日期",
+                    "fieldsize": "10",
+                    "limits": "1"
+                },
+                "CABG-4.6.1.2": {
+                    "id": "CABG-4.6.1",
+                    "label": "停止使用日期时间",
+                    "fieldtype": "时间",
+                    "fieldsize": "5",
+                    "limits": "1"
+                },
+                "CABG-4.6.2.3": {
+                    "id": "CABG-4.6.2",
+                    "label": "使用抗菌药物时间使用时间分层",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "术后24小时内结束使用"
+                        },
+                        {
+                            "value": "b",
+                            "name": "术后48小时内结束使用"
+                        },
+                        {
+                            "value": "c",
+                            "name": "术后72小时内结束使用"
+                        },
+                        {
+                            "value": "d",
+                            "name": "术后72小时之后继续使用"
+                        }
+                    ]
+                }
+            }
+        },
+        "CABG-4.7": {
+            "tips": "数据收集问题：住院病历术后预防性使用抗菌药物医嘱时间记录大于72小时,仍继续使用者,在病程记录中有a至d项之一的原因记录？",
+            "id": "CABG-4.7",
+            "label": "7.术后72小时之后继续使用的原因",
+            "fields": {
+                "CABG-4.7": {
+                    "id": "CABG-4.7",
+                    "label": "术后72小时之后继续使用的原因",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "在主要或次要诊断中术前有感染或具备潜在高危感染因素的患者"
+                        },
+                        {
+                            "value": "b",
+                            "name": "术前24小-48小时内接受抗菌药物治疗的患者，术后仍需继续使用"
+                        },
+                        {
+                            "value": "c",
+                            "name": "在手术两天后，被确诊为感染者并行治疗的患者"
+                        },
+                        {
+                            "value": "d",
+                            "name": "临床医师认为有继续使用抗菌药物治疗的适应症的患者，并经上级医师认定"
+                        },
+                        {
+                            "value": "UTD",
+                            "name": "无法确定或无记录"
+                        }
+                    ]
+                }
+            }
+        },
+        "CABG-5.1.1": {
+            "tips": "数据收集问题：住院病历术后小结、麻醉记录,术后病例讨论记录中有关术后活动性出血或血肿的记录？",
+            "id": "CABG-5.1.1",
+            "label": "1.术后活动性出血或血肿",
+            "fields": {
+                "CABG-5.1.1": {
+                    "id": "CABG-5.1.1",
+                    "label": "术后活动性出血或血肿?",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "y",
+                            "name": "选择y者,"
+                        },
+                        {
+                            "value": "n",
+                            "name": "选择n者,"
+                        }
+                    ]
+                }
+            }
+        },
+        "CABG-5.1.2": {
+            "tips": "数据收集问题：住院病历术后小结、麻醉记录,术后病例讨论记录中有关术后活动性出血或血肿主要情况的记录？",
+            "id": "CABG-5.1.2",
+            "label": "1.术后活动性出血或血肿",
+            "fields": {
+                "CABG-5.1.2": {
+                    "id": "CABG-5.1.2",
+                    "label": "术后活动性出血或血肿主要情况",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "术后第一小时引流≥400毫升"
+                        },
+                        {
+                            "value": "b",
+                            "name": "术后连续三小时每小时引流≥150毫升"
+                        },
+                        {
+                            "value": "c",
+                            "name": "血肿形成"
+                        },
+                        {
+                            "value": "UTD",
+                            "name": "无法确定或无记录"
+                        }
+                    ]
+                }
+            }
+        },
+        "CABG-5.2.1": {
+            "tips": "数据收集问题：住院病历术后小结、麻醉记录,术后病例讨论记录中有关再手术的记录？",
+            "id": "CABG-5.2.1",
+            "label": "2.再手术指征",
+            "fields": {
+                "CABG-5.2.1": {
+                    "id": "CABG-5.2.1",
+                    "label": "再手术?",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "y",
+                            "name": "选择y者,"
+                        },
+                        {
+                            "value": "n",
+                            "name": "选择n者,"
+                        }
+                    ]
+                }
+            }
+        },
+        "CABG-5.2.2": {
+            "tips": "数据收集问题：住院病历术后小结、麻醉记录,术后病例讨论记录中有关再手术指征的记录？",
+            "id": "CABG-5.2.2",
+            "label": "2.再手术指征",
+            "fields": {
+                "CABG-5.2.2": {
+                    "id": "CABG-5.2.2",
+                    "label": "再手术指征的选择",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "出血或心包填塞再手术"
+                        },
+                        {
+                            "value": "b",
+                            "name": "旁路血管栓塞再手术"
+                        },
+                        {
+                            "value": "c",
+                            "name": "因胸骨裂开或钢丝切割再手术"
+                        },
+                        {
+                            "value": "d",
+                            "name": "因瓣膜功能不全再手术"
+                        },
+                        {
+                            "value": "e",
+                            "name": "因其他心脏问题再手术（用文字说明）"
+                        },
+                        {
+                            "value": "f",
+                            "name": "因其他非心脏问题再手术（用文字说明）"
+                        },
+                        {
+                            "value": "UTD",
+                            "name": "无法确定或无记录"
+                        }
+                    ]
+                }
+            }
+        },
+        "CABG-6.1.1": {
+            "tips": "数据收集问题：住院病历用药医嘱记录,或麻醉记录中有关实施预防术后深静脉血栓的记录？",
+            "id": "CABG-6.1.1",
+            "label": "1.实施预防术后深静脉血栓？",
+            "fields": {
+                "CABG-6.1.1": {
+                    "id": "CABG-6.1.1",
+                    "label": "实施预防术后深静脉血栓？",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "y",
+                            "name": "选择y者,为是"
+                        },
+                        {
+                            "value": "n",
+                            "name": "选择n者为否,"
+                        }
+                    ]
+                }
+            }
+        },
+        "CABG-6.1.2": {
+            "tips": "数据收集问题：住院病历用药医嘱记录,或麻醉记录中有关实施预防术后深静脉血栓禁忌的记录？",
+            "id": "CABG-6.1.2",
+            "label": "1.实施预防术后深静脉血栓？",
+            "fields": {
+                "CABG-6.1.2": {
+                    "id": "CABG-6.1.2",
+                    "label": "实施预防术后深静脉血栓的禁忌？",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "出血性疾病"
+                        },
+                        {
+                            "value": "b",
+                            "name": "实验室血液系统检查有异常"
+                        },
+                        {
+                            "value": "c",
+                            "name": "临床医师记录有其他禁忌症"
+                        }
+                    ]
+                }
+            }
+        },
+        "CABG-6.1.2.1": {
+            "tips": "数据收集问题：住院病历用药医嘱记录,或麻醉记录中有关实施预防术后深静脉血栓的记录？",
+            "id": "CABG-6.1.2.1",
+            "label": "2.Caprini血栓风险因素评估",
+            "fields": {
+                "CABG-6.1.2.1": {
+                    "id": "CABG-6.1.2.1",
+                    "label": "实施Caprini血栓风险因素评估？",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "y",
+                            "name": "选择y为实施者"
+                        },
+                        {
+                            "value": "n",
+                            "name": "选择n为不实施者"
+                        }
+                    ]
+                },
+                "CABG-6.1.2.2": {
+                    "id": "CABG-6.1.2.2",
+                    "label": "评估分值",
+                    "fieldtype": "数字",
+                    "fieldsize": "1",
+                    "limits": "1"
+                },
+                "CABG-6.1.2.3": {
+                    "id": "CABG-6.1.2.3",
+                    "label": "DVT发生风险分层",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "低危0-1分（DVT发生风险＜10%），宜选择基本预防措施"
+                        },
+                        {
+                            "value": "b",
+                            "name": "中危2分  （DVT发生风险10-20%），宜选择药物预防或物理预防"
+                        },
+                        {
+                            "value": "c",
+                            "name": "高危3-4分  （DVT发生风险21-40%），宜选择药物预防和物理预防"
+                        },
+                        {
+                            "value": "d",
+                            "name": "极高危≥5分（DVT发生风险41-80%），宜选择药物预防和物理预防"
+                        }
+                    ]
+                }
+            }
+        },
+        "CABG-6.1.3": {
+            "tips": "数据收集问题：住院病历用药医嘱记录,或麻醉记录中有关实施预防术后深静脉血栓时间的记录？",
+            "id": "CABG-6.1.3",
+            "label": "3.预防深静脉栓塞医嘱执行时间",
+            "fields": {
+                "CABG-6.1.3.1": {
+                    "id": "CABG-6.1.3",
+                    "label": "起始日期",
+                    "fieldtype": "日期",
+                    "fieldsize": "10",
+                    "limits": "1"
+                },
+                "CABG-6.1.3.2": {
+                    "id": "CABG-6.1.3",
+                    "label": "起始时间",
+                    "fieldtype": "时间",
+                    "fieldsize": "5",
+                    "limits": "1"
+                }
+            }
+        },
+        "CABG-6.1.4.1": {
+            "tips": "数据收集问题：住院病历用药医嘱记录,或麻醉记录中有关实施预防术后深静脉血栓措施的记录？仅限低危0-1分患者可选A组之外,≥2分患者至少C,B组为通过!",
+            "id": "CABG-6.1.4.1",
+            "label": "4.三级预防深静脉栓塞方案的选择(至少A、B、C,三选二个通过)",
+            "fields": {
+                "CABG-6.1.4.1": {
+                    "id": "CABG-6.1.4.1",
+                    "label": "A.基本预防措施的选择",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "术后抬高患肢"
+                        },
+                        {
+                            "value": "b",
+                            "name": "尽早肢体、足、趾的主动与被动活动"
+                        },
+                        {
+                            "value": "c",
+                            "name": "离床活动，穿弹力袜"
+                        }
+                    ]
+                },
+                "CABG-6.1.4.2": {
+                    "id": "CABG-6.1.4.2",
+                    "label": "B.机械预防措施的选择",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "静脉足泵"
+                        },
+                        {
+                            "value": "b",
+                            "name": "间歇充气加压装置  Ⅰc推荐"
+                        },
+                        {
+                            "value": "c",
+                            "name": "压力梯度长袜"
+                        }
+                    ]
+                },
+                "CABG-6.1.4.3": {
+                    "id": "CABG-6.1.4.3",
+                    "label": "3.预防性地给予药物治疗的选择    (按照CABG-6.2.3风险评估结果,仅限低危0-1分患者可选A组之外,≥2分患者至少C,B组为通过!)",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "华发林  Ⅰb推荐"
+                        },
+                        {
+                            "value": "b",
+                            "name": "普通肝素  Ⅰb推荐"
+                        },
+                        {
+                            "value": "c",
+                            "name": "低分子肝素  Ⅰb推荐"
+                        },
+                        {
+                            "value": "d",
+                            "name": "达比加群  Ⅰb推荐"
+                        },
+                        {
+                            "value": "e",
+                            "name": "利伐沙班  Ⅰb推荐"
+                        },
+                        {
+                            "value": "f",
+                            "name": "阿哌沙班  Ⅰb推荐"
+                        },
+                        {
+                            "value": "g",
+                            "name": "其他（请注明）"
+                        }
+                    ]
+                }
+            }
+        },
+        "CABG-6.2.1": {
+            "tips": "数据收集问题：住院病历首页出院诊断中,或者从病程记录、护理记录、手术后病程中是否有关冠状动脉旁路移植术后严重并发症处理的记录？",
+            "id": "CABG-6.2.1",
+            "label": "1.手术后并发症",
+            "fields": {
+                "CABG-6.2.1": {
+                    "id": "CABG-6.2.1",
+                    "label": "手术后并发症？",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "y",
+                            "name": "选择y者,为是"
+                        },
+                        {
+                            "value": "n",
+                            "name": "选择n者为否,"
+                        }
+                    ]
+                }
+            }
+        },
+        "CABG-6.2.2": {
+            "tips": "数据收集问题：住院病历首页出院诊断中,或者从病程记录、护理记录、手术后病程中有关冠状动脉旁路移植术后严重并发症类别及ICD-10四位亚目的记录？",
+            "id": "CABG-6.2.2",
+            "label": "手术后并发症类别及ICD-10四位亚目的选择  (详见附表A)",
+            "fields": {
+                "CABG-6.2.2": {
+                    "id": "CABG-6.2.2",
+                    "label": "手术后并发症类别及ICD-10四位亚目的选择  (详见附表A)",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "手术并发症(O04.5，T81.1，T81.2，T81.3，T81.7，T81.8)"
+                        },
+                        {
+                            "value": "b",
+                            "name": "手术患者手术后肺栓塞例数(I26.9，O04.2，O07.2，O88.2)"
+                        },
+                        {
+                            "value": "c",
+                            "name": "手术患者手术后深静脉血栓例数(I80.2，I82.8，O22.3，O87.1)"
+                        },
+                        {
+                            "value": "d",
+                            "name": "手术患者手术后败血症例数(T81.4)"
+                        },
+                        {
+                            "value": "e",
+                            "name": "手术患者手术后出血或血肿例数(O04.1，O04.6，O04.8，O07.1，O07.6，T81.0)"
+                        },
+                        {
+                            "value": "f",
+                            "name": "手术患者手术伤口裂开(T81.3)"
+                        },
+                        {
+                            "value": "g",
+                            "name": "手术患者猝死（手术后24小时内死亡）(R96.0，R96.1)"
+                        },
+                        {
+                            "value": "h",
+                            "name": "手术患者手术后呼吸道并发症(J95.0至J95.9，J96.0，J96.9)"
+                        },
+                        {
+                            "value": "i",
+                            "name": "手术患者手术后生理/代谢紊乱(E86.x0，E87.0至E87.8，E88.8，E88.9，E89.0至E89.9)"
+                        },
+                        {
+                            "value": "j",
+                            "name": "与手术/操作相关感染(O04.0，O07.0，T81.4)"
+                        },
+                        {
+                            "value": "k",
+                            "name": "手术过程中异物遗留(T81.5)"
+                        },
+                        {
+                            "value": "l",
+                            "name": "麻醉并发症(T88.2，T88.3，T88.4，T88.5)"
+                        },
+                        {
+                            "value": "m",
+                            "name": "输注、输血反应(T80.0至T80.9)"
+                        },
+                        {
+                            "value": "n",
+                            "name": "住院患者发生压疮(L89.0至L89.9)"
+                        },
+                        {
+                            "value": "o",
+                            "name": "循环系统术后并发症(I97.0至I97.9)"
+                        },
+                        {
+                            "value": "p",
+                            "name": "心脏和血管植入物的并发症（不包括脓毒症）(T82.0至T82.9)"
+                        }
+                    ]
+                }
+            }
+        },
+        "CABG-6.2.3": {
+            "tips": "数据收集问题：住院病历中病程记录,病历首页中有关手术后出现并发症影响程度的记录？",
+            "id": "CABG-6.2.3",
+            "label": "影响程度",
+            "fields": {
+                "CABG-6.2.3": {
+                    "id": "CABG-6.2.3",
+                    "label": "影响程度的选择?",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "按时出院"
+                        },
+                        {
+                            "value": "b",
+                            "name": "延迟出院"
+                        },
+                        {
+                            "value": "c",
+                            "name": "转科继续治疗"
+                        },
+                        {
+                            "value": "d",
+                            "name": "死亡"
+                        }
+                    ]
+                }
+            }
+        },
+        "CABG-7.1": {
+            "tips": "数据收集问题：追溯性调查住院病历记录、护理记录及出院小结中有关冠状动脉旁路移植手术前健康教育的记录，主要采集四项信息？",
+            "id": "CABG-7.1",
+            "label": "冠状动脉旁路移植手术前的健康教育",
+            "fields": {
+                "CABG-7.1": {
+                    "id": "CABG-7.1",
+                    "label": "健康教育项目的选择",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "4",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "1.合理饮食、控制高血脂和高血糖，饮酒者戒酒、控制并测量体重，宣教指导有记录"
+                        },
+                        {
+                            "value": "b",
+                            "name": "2.训练呼吸功能，戒烟、预防呼吸道感染，宣教指导有记录"
+                        },
+                        {
+                            "value": "c",
+                            "name": "3.控制冠心病的临床症状（心绞痛等），按时服药，术前5-7天停口服抗血小板药物，调整药物剂量，宣教指导有记录"
+                        },
+                        {
+                            "value": "d",
+                            "name": "4.完善术前检查，做术前准备（皮肤、牙齿等无感染），宣教指导有记录"
+                        }
+                    ]
+                }
+            }
+        },
+        "CABG-7.2": {
+            "tips": "数据收集问题：追溯性调查住院病历记录、护理记录及出院小结中有关冠状动脉旁路移植手术后健康教育的记录，主要采集四项信息？",
+            "id": "CABG-7.2",
+            "label": "冠状动脉旁路移植手术后的健康教育",
+            "fields": {
+                "CABG-7.2": {
+                    "id": "CABG-7.2",
+                    "label": "健康教育项目的选择",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "4",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "1.合理饮食、控制高血脂和高血糖，控制体重"
+                        },
+                        {
+                            "value": "b",
+                            "name": "2.训练呼吸功能，戒烟、预防呼吸道感染"
+                        },
+                        {
+                            "value": "c",
+                            "name": "3.抗血小板药物治疗，保持搭桥血管通畅"
+                        },
+                        {
+                            "value": "d",
+                            "name": "4.合理用药（抗生素等）预防感染等并发症（手术切口处等）"
+                        }
+                    ]
+                }
+            }
+        },
+        "CABG-7.3.1": {
+            "tips": "数据收集问题：追溯性调查住院病历记录、护理记录及出院小结中有关出院时告知血运重建后长期生活方式和危险因素控制的健康教育的记录，主要采集五项信息？",
+            "id": "CABG-7.3.1",
+            "label": "1.血运重建术后应当定期进行全面的临床和预后评估",
+            "fields": {
+                "CABG-7.3.1": {
+                    "id": "CABG-7.3.1",
+                    "label": "健康教育项目的选择",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "8",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "定期进行心电图、实验室检查、运动试验及超声心动图检测。"
+                        },
+                        {
+                            "value": "b",
+                            "name": "对高危患者（如近期血运重建，CHF等）制定医学监督计划。"
+                        }
+                    ]
+                }
+            }
+        },
+        "CABG-7.3.2": {
+            "tips": "数据收集问题：追溯性调查住院病历记录、护理记录及出院小结中有关出院时告知血运重建后长期生活方式和危险因素控制的健康教育的记录，主要采集五项信息？",
+            "id": "CABG-7.3.2",
+            "label": "2.应当对患者进行健康教育",
+            "fields": {
+                "CABG-7.3.2": {
+                    "id": "CABG-7.3.2",
+                    "label": "健康教育项目的选择",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "8",
+                    "options": [
+                        {
+                            "value": "c",
+                            "name": "叮嘱其坚持每周5次，至少每天1次30-60 min适当强度的有氧运动。"
+                        }
+                    ]
+                }
+            }
+        },
+        "CABG-7.3.3": {
+            "tips": "数据收集问题：追溯性调查住院病历记录、护理记录及出院小结中有关出院时告知血运重建后长期生活方式和危险因素控制的健康教育的记录，主要采集五项信息？",
+            "id": "CABG-7.3.3",
+            "label": "3.饮食和体重的控制标准",
+            "fields": {
+                "CABG-7.3.3": {
+                    "id": "CABG-7.3.3",
+                    "label": "健康教育项目的选择",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "8",
+                    "options": [
+                        {
+                            "value": "d",
+                            "name": "鼓励控制体质量(体质指数＜24 kg/m2)，男性腰围＜90 cm，女性腰围＜80 cm。建议每次健康检查都要评估体质指数和（或）腰围。"
+                        },
+                        {
+                            "value": "e",
+                            "name": "应将降低基线体重标准的10%作为减肥治疗的初始目标。"
+                        }
+                    ]
+                }
+            }
+        },
+        "CABG-7.3.4": {
+            "tips": "数据收集问题：追溯性调查住院病历记录、护理记录及出院小结中有关出院时告知血运重建后长期生活方式和危险因素控制的健康教育的记录，主要采集五项信息？",
+            "id": "CABG-7.3.4",
+            "label": "4.推荐选择健康食品，改变生活方式、饮食疗法及药物治疗",
+            "fields": {
+                "CABG-7.3.4": {
+                    "id": "CABG-7.3.4",
+                    "label": "健康教育项目的选择",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "8",
+                    "options": [
+                        {
+                            "value": "f",
+                            "name": "将LDL-C控制于＜2.6mmol/L(100 mg/dl)。"
+                        },
+                        {
+                            "value": "g",
+                            "name": "在极高危人群中，控制LDL-C＜2.0 mmol/L(80 mg/dl)。"
+                        },
+                        {
+                            "value": "h",
+                            "name": "推荐更多摄人富含不饱和脂肪酸的食物如含有Omega-3脂肪酸的鱼类等。"
+                        },
+                        {
+                            "value": "i",
+                            "name": "通过药物治疗和生活方式的改变使血压控制＜130/80 mm Hg(lmm Hg=0.133 kPa)。"
+                        },
+                        {
+                            "value": "j",
+                            "name": "无论其血脂水平如何，除非存在禁忌症，所有患者均应使用他汀类药物。"
+                        },
+                        {
+                            "value": "k",
+                            "name": "β受体阻滞剂和ACEI应作为一线用药。"
+                        },
+                        {
+                            "value": "l",
+                            "name": "推荐在每次随访时向患者强调戒烟和控制吸二手烟的重要性。"
+                        }
+                    ]
+                }
+            }
+        },
+        "CABG-7.3.5": {
+            "tips": "数据收集问题：追溯性调查住院病历记录、护理记录及出院小结中有关出院时告知血运重建后长期生活方式和危险因素控制的健康教育的记录，主要采集五项信息？",
+            "id": "CABG-7.3.5",
+            "label": "5.对伴有糖尿病的患者要着重强调",
+            "fields": {
+                "CABG-7.3.5": {
+                    "id": "CABG-7.3.5",
+                    "label": "健康教育项目的选择",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "8",
+                    "options": [
+                        {
+                            "value": "m",
+                            "name": "通过改变生活方式和坚持药物治疗达到HbAlc＜6.5%-7.0%的标准。"
+                        },
+                        {
+                            "value": "n",
+                            "name": "严格控制其他危险因素。"
+                        },
+                        {
+                            "value": "o",
+                            "name": "由专业的内科医生指导糖尿病治疗。"
+                        }
+                    ]
+                }
+            }
+        },
+        "CABG-7.4.1": {
+            "tips": "数据收集问题：追溯性调查住院病历记录、护理记录及出院小结中有关常见高危因素的记录？",
+            "id": "CABG-7.4.1",
+            "label": "CABG常见高危因素评估",
+            "fields": {
+                "CABG-7.4.1": {
+                    "id": "CABG-7.4.1",
+                    "label": "常见高危因素的选择",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "3",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "年龄大于70岁"
+                        },
+                        {
+                            "value": "b",
+                            "name": "女性"
+                        },
+                        {
+                            "value": "c",
+                            "name": "再次CABG"
+                        },
+                        {
+                            "value": "d",
+                            "name": "急诊CABG"
+                        },
+                        {
+                            "value": "e",
+                            "name": "左心室功能低下左室射血分数低于29%"
+                        },
+                        {
+                            "value": "f",
+                            "name": "伴有充血性心力衰竭"
+                        },
+                        {
+                            "value": "g",
+                            "name": "左主干病变及弥漫性三支病变"
+                        },
+                        {
+                            "value": "h",
+                            "name": "少于30天的Q波性心梗"
+                        },
+                        {
+                            "value": "i",
+                            "name": "合并其他器官功能障碍(糖尿病、终未期肾功能不全、慢阻肺、周围血管阻塞性疾病等)"
+                        },
+                        {
+                            "value": "j",
+                            "name": "未使用乳内动脉"
+                        },
+                        {
+                            "value": "k",
+                            "name": "其他"
+                        }
+                    ]
+                }
+            }
+        },
+        "CABG-8.1": {
+            "tips": "数据收集问题：追溯性调查住院病历记录之手术医嘱、病程记录、护理记录中有关手术野皮肤准备方法的记录？",
+            "id": "CABG-8.1",
+            "label": "1.手术野皮肤准备常用方法的选择",
+            "fields": {
+                "CABG-8.1": {
+                    "id": "CABG-8.1",
+                    "label": "1.手术野皮肤准备常用方法的选择",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "传统的剃刀手工刮毛"
+                        },
+                        {
+                            "value": "b",
+                            "name": "电动剃刀剪毛"
+                        },
+                        {
+                            "value": "c",
+                            "name": "仅做皮肤清洁"
+                        },
+                        {
+                            "value": "d",
+                            "name": "脱毛剂"
+                        },
+                        {
+                            "value": "e",
+                            "name": "清洁+刮毛"
+                        },
+                        {
+                            "value": "f",
+                            "name": "不做手术野皮肤准备"
+                        },
+                        {
+                            "value": "g",
+                            "name": "其他皮肤准备方式。"
+                        }
+                    ]
+                }
+            }
+        },
+        "CABG-8.2": {
+            "tips": "数据收集问题：追溯性调查住院病历记录之病程记录、护理记录、出院小结中有关手术切口愈合情况的记录？",
+            "id": "CABG-8.2",
+            "label": "2.手术切口愈合",
+            "fields": {
+                "CABG-8.2": {
+                    "id": "CABG-8.2",
+                    "label": "手术切口愈合情况的选择",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "手术切口Ｉ甲愈合"
+                        },
+                        {
+                            "value": "b",
+                            "name": "手术切口Ｉ乙愈合"
+                        },
+                        {
+                            "value": "c",
+                            "name": "手术切口Ｉ丙愈合"
+                        },
+                        {
+                            "value": "d",
+                            "name": "深部感染"
+                        }
+                    ]
+                }
+            }
+        },
+        "CABG-9": {
+            "tips": "数据收集问题：追溯性调查住院病历之病历首页、出院小结记录的住院天数，并是在住院21天内出院者的记录？",
+            "id": "CABG-9",
+            "label": "住院21天内出院",
+            "fields": {
+                "CABG-9": {
+                    "id": "CABG-9",
+                    "label": "住院21天内出院？",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "y",
+                            "name": "选择y者,为是"
+                        },
+                        {
+                            "value": "n",
+                            "name": "选择n者,为否,"
+                        }
+                    ]
+                }
+            }
+        },
+        "CABG-10.1": {
+            "tips": "数据收集问题：在在住院病历首页中提取住院天数的信息？",
+            "id": "CABG-10.1",
+            "label": "1.住院天数",
+            "fields": {
+                "CABG-10.1.1": {
+                    "id": "CABG-10.1",
+                    "label": "入院日期",
+                    "fieldtype": "日期",
+                    "fieldsize": "10",
+                    "limits": "1"
+                },
+                "CABG-10.1.2": {
+                    "id": "CABG-10.1",
+                    "label": "出院日期",
+                    "fieldtype": "日期",
+                    "fieldsize": "10",
+                    "limits": "1"
+                },
+                "CABG-10.1.3": {
+                    "id": "CABG-10.1",
+                    "label": "住院天数",
+                    "fieldtype": "数字",
+                    "fieldsize": "1-120",
+                    "limits": "1"
+                }
+            }
+        },
+        "CABG-10.2": {
+            "tips": "数据收集问题：在住院病历首页中提取离院方式选择的信息？",
+            "id": "CABG-10.2",
+            "label": "2.离院方式",
+            "fields": {
+                "CABG-10.2": {
+                    "id": "CABG-10.2",
+                    "label": "离院方式选择?",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "医嘱离院"
+                        },
+                        {
+                            "value": "b",
+                            "name": "医嘱转院"
+                        },
+                        {
+                            "value": "c",
+                            "name": "医嘱转社区卫生服务机构/乡镇卫生院"
+                        },
+                        {
+                            "value": "d",
+                            "name": "非医嘱离院"
+                        },
+                        {
+                            "value": "e",
+                            "name": "死亡"
+                        }
+                    ]
+                }
+            }
+        },
+        "CABG-10.3": {
+            "tips": "数据收集问题：在住院病历首页出院诊断、病程记录中提取死亡可能涉及因素的信息？",
+            "id": "CABG-10.3",
+            "label": "3.死亡可能涉及因素",
+            "fields": {
+                "CABG-10.3": {
+                    "id": "CABG-10.3",
+                    "label": "死亡可能涉及因素?",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "死亡与CABG有直接关系"
+                        },
+                        {
+                            "value": "b",
+                            "name": "死亡与CABG有间接关系"
+                        },
+                        {
+                            "value": "c",
+                            "name": "死亡与CABG无关，即死于不相关的疾病，如癌症或其他意外"
+                        },
+                        {
+                            "value": "d",
+                            "name": "死亡，不知是否与CABG有关"
+                        }
+                    ]
+                }
+            }
+        },
+        "CABG-10.4": {
+            "tips": "数据收集问题：在在住院病历首页中提取住院费用的信息？",
+            "id": "CABG-10.4",
+            "label": "4.住院费用（元）",
+            "fields": {
+                "CABG-10.4.1": {
+                    "id": "CABG-10.4",
+                    "label": "住院费用",
+                    "fieldtype": "人民币（元）",
+                    "fieldsize": "8",
+                    "limits": "1"
+                },
+                "CABG-10.4.2": {
+                    "id": "CABG-10.4",
+                    "label": "其中:西药费",
+                    "fieldtype": "人民币（元）",
+                    "fieldsize": "8",
+                    "limits": "1"
+                },
+                "CABG-10.4.3": {
+                    "id": "CABG-10.4",
+                    "label": "其中:中药费",
+                    "fieldtype": "人民币（元）",
+                    "fieldsize": "8",
+                    "limits": "1"
+                },
+                "CABG-10.4.4": {
+                    "id": "CABG-10.4",
+                    "label": "其中:血液和血液制品类",
+                    "fieldtype": "",
+                    "fieldsize": "8",
+                    "limits": "1"
+                },
+                "CABG-10.4.5": {
+                    "id": "CABG-10.4",
+                    "label": "其中:手术治疗项目费",
+                    "fieldtype": "人民币（元）",
+                    "fieldsize": "8",
+                    "limits": "1"
+                },
+                "CABG-10.4.6": {
+                    "id": "CABG-10.4",
+                    "label": "其中:手术治疗用一次性医用材料费",
+                    "fieldtype": "人民币（元）",
+                    "fieldsize": "8",
+                    "limits": "1"
+                }
+            }
+        },
+        "CABG-11.1": {
+            "tips": "数据收集问题：追溯性调查住院病历之病历首页、出院小结记录有手术后血糖管理的记录？",
+            "id": "CABG-11.1",
+            "label": "患者术前伴随糖尿病？",
+            "fields": {
+                "CABG-11.1": {
+                    "id": "CABG-11.1",
+                    "label": "患者术前伴随糖尿病？",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "y",
+                            "name": "选择y者,为是"
+                        },
+                        {
+                            "value": "n",
+                            "name": "选择n者,为否,"
+                        }
+                    ]
+                }
+            }
+        },
+        "CABG-11.2": {
+            "tips": "",
+            "id": "CABG-11.2",
+            "label": "血糖监测值",
+            "fields": {
+                "CABG-11.2.1": {
+                    "id": "CABG-11.2",
+                    "label": "手术前血糖监测值",
+                    "fieldtype": "数值",
+                    "fieldsize": "3",
+                    "limits": "1"
+                },
+                "CABG-11.2.2": {
+                    "id": "CABG-11.2",
+                    "label": "术后第1天6Am血糖监测值",
+                    "fieldtype": "数值",
+                    "fieldsize": "3",
+                    "limits": "1"
+                },
+                "CABG-11.2.3": {
+                    "id": "CABG-11.2",
+                    "label": "术后第2天6Am血糖监测值",
+                    "fieldtype": "数值",
+                    "fieldsize": "3",
+                    "limits": "1"
+                },
+                "CABG-11.2.4": {
+                    "id": "CABG-11.2",
+                    "label": "术后第3天6Am血糖监测值",
+                    "fieldtype": "数值",
+                    "fieldsize": "3",
+                    "limits": "1"
+                },
+                "CABG-11.2.5": {
+                    "id": "CABG-11.2",
+                    "label": "术后未作血糖监测",
+                    "fieldtype": "",
+                    "fieldsize": "",
+                    "limits": ""
+                }
+            }
+        },
+        "CABG-12.1": {
+            "tips": "数据收集问题：从出院时，实施患者对服务的体验与评价表中获取的信息？",
+            "id": "CABG-12.1",
+            "label": "出院时实施患者对服务的体验与评价(源自出院时“患者对服务的体验与评价”调查表)",
+            "fields": {
+                "CABG-12.1": {
+                    "id": "CABG-12.1",
+                    "label": "①入住病房时护士以口头形式或书面形式主动向您介绍住院环境和注意事项",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "很满意"
+                        },
+                        {
+                            "value": "b",
+                            "name": "较满意"
+                        },
+                        {
+                            "value": "c",
+                            "name": "很满意"
+                        },
+                        {
+                            "value": "d",
+                            "name": "不满意"
+                        },
+                        {
+                            "value": "e",
+                            "name": "很不满意"
+                        }
+                    ]
+                },
+                "CABG-12.2": {
+                    "id": "CABG-12.2",
+                    "label": "②医生诊断后是否主动告知您治疗的方案、预期结果及预计费用",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "很满意"
+                        },
+                        {
+                            "value": "b",
+                            "name": "较满意"
+                        },
+                        {
+                            "value": "c",
+                            "name": "很满意"
+                        },
+                        {
+                            "value": "d",
+                            "name": "不满意"
+                        },
+                        {
+                            "value": "e",
+                            "name": "很不满意"
+                        }
+                    ]
+                },
+                "CABG-12.3": {
+                    "id": "CABG-12.3",
+                    "label": "③您对医院住院病房与床单的清洁、舒适程度的评价",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "很满意"
+                        },
+                        {
+                            "value": "b",
+                            "name": "较满意"
+                        },
+                        {
+                            "value": "c",
+                            "name": "很满意"
+                        },
+                        {
+                            "value": "d",
+                            "name": "不满意"
+                        },
+                        {
+                            "value": "e",
+                            "name": "很不满意"
+                        }
+                    ]
+                },
+                "CABG-12.4": {
+                    "id": "CABG-12.4",
+                    "label": "④您对医院住院病房的生活环境方便程度的评价",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "很满意"
+                        },
+                        {
+                            "value": "b",
+                            "name": "较满意"
+                        },
+                        {
+                            "value": "c",
+                            "name": "很满意"
+                        },
+                        {
+                            "value": "d",
+                            "name": "不满意"
+                        },
+                        {
+                            "value": "e",
+                            "name": "很不满意"
+                        }
+                    ]
+                },
+                "CABG-12.5": {
+                    "id": "CABG-12.5",
+                    "label": "⑤您对医院住院病房提供的膳食满意程度的评价",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "很满意"
+                        },
+                        {
+                            "value": "b",
+                            "name": "较满意"
+                        },
+                        {
+                            "value": "c",
+                            "name": "很满意"
+                        },
+                        {
+                            "value": "d",
+                            "name": "不满意"
+                        },
+                        {
+                            "value": "e",
+                            "name": "很不满意"
+                        }
+                    ]
+                },
+                "CABG-12.6": {
+                    "id": "CABG-12.6",
+                    "label": "⑥您经过本次治疗后对病痛减轻与生活质量改善程度的评价",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "很满意"
+                        },
+                        {
+                            "value": "b",
+                            "name": "较满意"
+                        },
+                        {
+                            "value": "c",
+                            "name": "很满意"
+                        },
+                        {
+                            "value": "d",
+                            "name": "不满意"
+                        },
+                        {
+                            "value": "e",
+                            "name": "很不满意"
+                        }
+                    ]
+                },
+                "CABG-12.7": {
+                    "id": "CABG-12.7",
+                    "label": "⑦对医生向您提供本次所患疾病相关的防治与康复知识的满意程度的评价",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [
+                        {
+                            "value": "a",
+                            "name": "很满意"
+                        },
+                        {
+                            "value": "b",
+                            "name": "较满意"
+                        },
+                        {
+                            "value": "c",
+                            "name": "很满意"
+                        },
+                        {
+                            "value": "d",
+                            "name": "不满意"
+                        },
+                        {
+                            "value": "e",
+                            "name": "很不满意"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

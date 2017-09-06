@@ -1,0 +1,2304 @@
+{
+    "id": "AECOPD",
+    "label": "v5.0-AECOPD医疗质量与安全监测指标临床数据的XML文件布局",
+    "fields": {
+        "AECOPD-0.1.1": {
+            "tips": "数据收集问题：在住院病案首页的质控医师签字栏的姓名？",
+            "id": "AECOPD-0.1.1",
+            "label": "1.质控医师",
+            "fields": {
+                "AECOPD-0.1.1.1": {
+                    "id": "AECOPD-0.1.1",
+                    "label": "1.质控医师",
+                    "fieldtype": "",
+                    "fieldsize": "",
+                    "limits": ""
+                },
+                "AECOPD-0.1.1.2": {
+                    "id": "AECOPD-0.1.1",
+                    "label": "2.质控护士",
+                    "fieldtype": "",
+                    "fieldsize": "",
+                    "limits": ""
+                },
+                "AECOPD-0.1.1.3": {
+                    "id": "AECOPD-0.1.1",
+                    "label": "3.质控审核医师(是指上级医师,如，主治医师或者副主任医师)",
+                    "fieldtype": "",
+                    "fieldsize": "",
+                    "limits": ""
+                }
+            }
+        },
+        "AECOPD-0.1.2": {
+            "tips": "数据收集问题：在住院病案首页的质控医师签字栏的姓名？",
+            "id": "AECOPD-0.1.2",
+            "label": "2.患者病案号",
+            "fields": {
+                "AECOPD-0.1.2": {
+                    "id": "AECOPD-0.1.2",
+                    "label": "患者病案号",
+                    "fieldtype": "数字 字母",
+                    "fieldsize": "",
+                    "limits": "1"
+                }
+            }
+        },
+        "AECOPD-0.1.3": {
+            "tips": "数据收集问题：在住院病案首页提取第一诊断ICD-10编码与名称？",
+            "id": "AECOPD-0.1.3",
+            "label": "1.第一诊断或第二诊断ICD-10编码与名称   (质控病历提取唯一依据)",
+            "fields": {
+                "AECOPD-0.1.3": {
+                    "id": "AECOPD-0.1.3",
+                    "label": "第一诊断或第二诊断ICD-10编码与名称的选择   (质控病历提取唯一依据)",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [{
+                            "value": "a",
+                            "name": "慢性阻塞性肺病伴急性下呼吸道感染（ICD-10编码J44.000）"
+                        },
+                        {
+                            "value": "b",
+                            "name": "慢性阻塞性肺病伴急性加重（ICD-10编码J44.100）"
+                        },
+                        {
+                            "value": "c",
+                            "name": "慢性阻塞性肺疾病II级(ICD-10编码J44.903)"
+                        },
+                        {
+                            "value": "d",
+                            "name": "慢性阻塞性肺疾病III级(ICD-10编码J44.904)"
+                        },
+                        {
+                            "value": "e",
+                            "name": "慢性阻塞性肺疾病IV级(ICD-10编码J44.904)"
+                        }
+                    ]
+                }
+            }
+        },
+        "AECOPD-0.2.1": {
+            "tips": "数据收集问题：在住院病案首页中提取出生日期的信息？",
+            "id": "AECOPD-0.2.1",
+            "label": "1.出生日期",
+            "fields": {
+                "AECOPD-0.2.1": {
+                    "id": "AECOPD-0.2.1",
+                    "label": "出生日期",
+                    "fieldtype": "日期",
+                    "fieldsize": "10",
+                    "limits": "1"
+                }
+            }
+        },
+        "AECOPD-0.2.2": {
+            "tips": "数据收集问题：在住院病案首页或急诊病历中提取发病时间的信息？",
+            "id": "AECOPD-0.2.2",
+            "label": "2.发病日期时间",
+            "fields": {
+                "AECOPD-0.2.2.1": {
+                    "id": "AECOPD-0.2.2",
+                    "label": "发病日期",
+                    "fieldtype": "日期",
+                    "fieldsize": "10",
+                    "limits": "1"
+                },
+                "AECOPD-0.2.2.2": {
+                    "id": "AECOPD-0.2.2",
+                    "label": "发病时间",
+                    "fieldtype": "时间",
+                    "fieldsize": "5",
+                    "limits": "1"
+                },
+                "AECOPD-0.2.2.3": {
+                    "id": "AECOPD-0.2.2",
+                    "label": "无法确定发病日期时间",
+                    "fieldtype": "",
+                    "fieldsize": "",
+                    "limits": ""
+                }
+            }
+        },
+        "AECOPD-0.2.3": {
+            "tips": "数据收集问题：在住院病案首页或急诊病历中提取急诊或门诊时间（时间较早者）的信息？",
+            "id": "AECOPD-0.2.3",
+            "label": "3.到达本院急诊或门诊日期（时间较早者）",
+            "fields": {
+                "AECOPD-0.2.3.1": {
+                    "id": "AECOPD-0.2.3",
+                    "label": "急诊或门诊日期（时间较早者）",
+                    "fieldtype": "日期",
+                    "fieldsize": "10",
+                    "limits": "1"
+                },
+                "AECOPD-0.2.3.2": {
+                    "id": "AECOPD-0.2.3",
+                    "label": "急诊或门诊时间（时间较早者）",
+                    "fieldtype": "时间",
+                    "fieldsize": "5",
+                    "limits": "1"
+                }
+            }
+        },
+        "AECOPD-0.2.4": {
+            "tips": "数据收集问题：在住院病案首页或急诊病历中提取入院日期时间的信息？",
+            "id": "AECOPD-0.2.4",
+            "label": "4.入院日期时间",
+            "fields": {
+                "AECOPD-0.2.4.1": {
+                    "id": "AECOPD-0.2.4",
+                    "label": "入院日期",
+                    "fieldtype": "日期",
+                    "fieldsize": "10",
+                    "limits": "1"
+                },
+                "AECOPD-0.2.4.2": {
+                    "id": "AECOPD-0.2.4",
+                    "label": "入院时间",
+                    "fieldtype": "时间",
+                    "fieldsize": "5",
+                    "limits": "1"
+                }
+            }
+        },
+        "AECOPD-0.2.5": {
+            "tips": "数据收集问题：在住院病案首页中提取出院日期的信息？",
+            "id": "AECOPD-0.2.5",
+            "label": "5.出院日期",
+            "fields": {
+                "AECOPD-0.2.5": {
+                    "id": "AECOPD-0.2.5",
+                    "label": "出院日期",
+                    "fieldtype": "日期",
+                    "fieldsize": "10",
+                    "limits": "1"
+                }
+            }
+        },
+        "AECOPD-0.3.1": {
+            "tips": "数据收集问题：在住院病案首页或急诊病历中提取诊疗其他信息？",
+            "id": "AECOPD-0.3.1",
+            "label": "诊疗其他信息",
+            "fields": {
+                "AECOPD-0.3.1": {
+                    "id": "AECOPD-0.3.1",
+                    "label": "费用支付方式",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [{
+                            "value": "a",
+                            "name": "城镇职工基本医疗保险"
+                        },
+                        {
+                            "value": "b",
+                            "name": "城乡居民基本医疗保险"
+                        },
+                        {
+                            "value": "c",
+                            "name": "城镇居民基本医疗保险（做成可删减选项，将来这个选项可能去掉）"
+                        },
+                        {
+                            "value": "d",
+                            "name": "新型农村合作医疗保险（做成可删减选项，将来这个选项可能去掉）"
+                        },
+                        {
+                            "value": "e",
+                            "name": "贫困救助"
+                        },
+                        {
+                            "value": "f",
+                            "name": "商业医疗保险"
+                        },
+                        {
+                            "value": "g",
+                            "name": "公费医疗"
+                        },
+                        {
+                            "value": "h",
+                            "name": "全自费"
+                        },
+                        {
+                            "value": "i",
+                            "name": "其他社会保险"
+                        },
+                        {
+                            "value": "j",
+                            "name": "其他"
+                        }
+                    ]
+                },
+                "AECOPD-0.3.2": {
+                    "id": "AECOPD-0.3.2",
+                    "label": "收入住院途径",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [{
+                            "value": "a",
+                            "name": "门诊收入院"
+                        },
+                        {
+                            "value": "b",
+                            "name": "急诊收入院"
+                        },
+                        {
+                            "value": "c",
+                            "name": "院内临床科室转来"
+                        },
+                        {
+                            "value": "d",
+                            "name": "其他"
+                        }
+                    ]
+                },
+                "AECOPD-0.3.3": {
+                    "id": "AECOPD-0.3.3",
+                    "label": "到院交通工具",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [{
+                            "value": "a",
+                            "name": "救护车"
+                        },
+                        {
+                            "value": "b",
+                            "name": "出租车或自家车"
+                        },
+                        {
+                            "value": "c",
+                            "name": "其他"
+                        }
+                    ]
+                }
+            }
+        },
+        "AECOPD-1.1.1": {
+            "tips": "数据收集问题：在住院病历的入院志或者首次病程记录中提取入院后首次病情严重程度评估的信息？",
+            "id": "AECOPD-1.1.1",
+            "label": "1.病情严重程度评估与分级(A与B二种方法二选一)",
+            "fields": {
+                "AECOPD-1.1.1": {
+                    "id": "AECOPD-1.1.1",
+                    "label": "入院后实施首次病情严重程度评估?",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [{
+                            "value": "y",
+                            "name": "选择y者为是,请同时应进行以下选择项"
+                        },
+                        {
+                            "value": "n",
+                            "name": "选择n者为否,以下栏关闭,请直接进入AECOPD-1.2"
+                        }
+                    ]
+                }
+            }
+        },
+        "AECOPD-1.1.2.1": {
+            "tips": "数据收集问题：在住院病历的入院志或者首次病程记录中提取急诊或入院后是否实施首次慢阻肺的综合评估或者COPD临床严重程度分级的评价结果?",
+            "id": "AECOPD-1.1.2.1",
+            "label": "1.病情严重程度评估与分级(A与B二种方法二选一)",
+            "fields": {
+                "AECOPD-1.1.2.1": {
+                    "id": "AECOPD-1.1.2.1",
+                    "label": "A.慢阻肺的综合评估",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [{
+                            "value": "a",
+                            "name": "A组 风险低"
+                        },
+                        {
+                            "value": "b",
+                            "name": "B组 风险低"
+                        },
+                        {
+                            "value": "c",
+                            "name": "C组 风险高"
+                        },
+                        {
+                            "value": "d",
+                            "name": "D组 风险高"
+                        }
+                    ]
+                },
+                "AECOPD-1.1.2.2": {
+                    "id": "AECOPD-1.1.2.2",
+                    "label": "B. COPD临床严重程度分级",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [{
+                            "value": "a",
+                            "name": "Ⅰ级（轻度）：FEV1/FVC＜70%，FEV1≥80%预计值，伴或不伴有慢性症状（咳嗽、咳痰）"
+                        },
+                        {
+                            "value": "b",
+                            "name": "Ⅱ级（中度）：FEV1/FVC＜70%，50%≤FEV1＜80%预计值，常伴有慢性症状（咳嗽，咳痰，活动后呼吸困难"
+                        },
+                        {
+                            "value": "c",
+                            "name": "Ⅲ级（重度）：FEV1/FVC＜70%，30%≤FEV1＜50%预计值，多伴有慢性症状（咳嗽，咳痰，呼吸困难），反复出现急性加重"
+                        },
+                        {
+                            "value": "d",
+                            "name": "Ⅳ级（极重度）：FEV1/FVC＜70%，FEV1＜30%预计值或FEV1＜50%预计值，伴慢性呼吸衰竭，可合并肺心病及右心功能不全或衰竭"
+                        }
+                    ]
+                }
+            }
+        },
+        "AECOPD-1.2.1": {
+            "tips": "数据收集问题：在住院病历的入院志或者首次病程记录或者检验报告中提取急诊或入院后首次 氧合评估的信息？",
+            "id": "AECOPD-1.2.1",
+            "label": "2. 入院后首次氧合评估",
+            "fields": {
+                "AECOPD-1.2.1": {
+                    "id": "AECOPD-1.2.1",
+                    "label": "入院后实施首次氧合评估（首次）?",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [{
+                            "value": "y",
+                            "name": "选择y者为是,请同时应进行以下选择项"
+                        },
+                        {
+                            "value": "n",
+                            "name": "选择n者为否,以下栏关闭,请直接进入AECOPD-3"
+                        }
+                    ]
+                },
+                "AECOPD-1.2.2": {
+                    "id": "AECOPD-1.2.2",
+                    "label": "实施首次氧合评估时是否吸氧（FiO2）?",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [{
+                            "value": "y",
+                            "name": "选择y者为是"
+                        },
+                        {
+                            "value": "n",
+                            "name": "选择n者为否"
+                        }
+                    ]
+                },
+                "AECOPD-1.2.3.1": {
+                    "id": "AECOPD-1.2.3",
+                    "label": "A. 动脉血气分析（PaO2）",
+                    "fieldtype": "数字",
+                    "fieldsize": "3",
+                    "limits": "1"
+                },
+                "AECOPD-1.2.3.2": {
+                    "id": "AECOPD-1.2.3",
+                    "label": "B. 指氧仪检查（SatO2）",
+                    "fieldtype": "数字",
+                    "fieldsize": "3",
+                    "limits": "1"
+                }
+            }
+        },
+        "AECOPD-1.2.4": {
+            "tips": "数据收集问题：在住院病历的入院志或者首次病程记录或者检验报告中提取急诊或入院后首次氧合评估结论判定的信息？",
+            "id": "AECOPD-1.2.4",
+            "label": "2. 入院后首次氧合评估",
+            "fields": {
+                "AECOPD-1.2.4": {
+                    "id": "AECOPD-1.2.4",
+                    "label": "入院后首次氧合评估结论的判定",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "2",
+                    "options": [{
+                            "value": "a",
+                            "name": "呼吸频率＞35/min"
+                        },
+                        {
+                            "value": "b",
+                            "name": "PaO2＜40mmHg或PaO2/FiO2＜200mmHg"
+                        },
+                        {
+                            "value": "c",
+                            "name": "pH＜7.25"
+                        },
+                        {
+                            "value": "d",
+                            "name": "PaCO2＞50mmHg"
+                        }
+                    ]
+                }
+            }
+        },
+        "AECOPD-1.3.1": {
+            "tips": "数据收集问题：在住院病历的入院志或者首次病程记录中提取入院后是否实施首次胸部影像学检查评估的信息？",
+            "id": "AECOPD-1.3.1",
+            "label": "3.胸部影像学检查",
+            "fields": {
+                "AECOPD-1.3.1": {
+                    "id": "AECOPD-1.3.1",
+                    "label": "入院后实施首次胸部影像学检查?",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [{
+                            "value": "y",
+                            "name": "选择y者为是,请同时应进行以下选择项"
+                        },
+                        {
+                            "value": "n",
+                            "name": "选择n者为否,以下栏关闭,请直接进入AECOPD-1.4"
+                        }
+                    ]
+                }
+            }
+        },
+        "AECOPD-1.3.2": {
+            "tips": "数据收集问题：在住院病历的入院志或者首次病程记录中提取急诊或入院后首次胸部影像学检查的评价结果?",
+            "id": "AECOPD-1.3.2",
+            "label": "3.胸部影像学检查",
+            "fields": {
+                "AECOPD-1.3.2": {
+                    "id": "AECOPD-1.3.2",
+                    "label": "胸部影像学检查评估",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [{
+                            "value": "a",
+                            "name": "可见肺气肿相关表现"
+                        },
+                        {
+                            "value": "b",
+                            "name": "可见肺动脉高压相关表现"
+                        },
+                        {
+                            "value": "c",
+                            "name": "可见肺原性心脏病相关表现"
+                        },
+                        {
+                            "value": "d",
+                            "name": "增强CT肺血管成像排除肺栓塞（必要时，可选项）"
+                        }
+                    ]
+                }
+            }
+        },
+        "AECOPD-1.4.1": {
+            "tips": "数据收集问题：在住院病历的入院志或者首次病程记录中提取入院后是否实施首次心电图检查评估的信息？",
+            "id": "AECOPD-1.4.1",
+            "label": "4.心电图检查",
+            "fields": {
+                "AECOPD-1.4.1": {
+                    "id": "AECOPD-1.4.1",
+                    "label": "入院后实施首次心电图检查评估?",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [{
+                            "value": "y",
+                            "name": "选择y者为是,请同时应进行以下选择项"
+                        },
+                        {
+                            "value": "n",
+                            "name": "选择n者为否,以下栏关闭,请直接进入AECOPD-1.5"
+                        }
+                    ]
+                }
+            }
+        },
+        "AECOPD-1.4.2": {
+            "tips": "数据收集问题：在住院病历的入院志或者首次病程记录中提取急诊或入院后首次心电图检查的评价结果?",
+            "id": "AECOPD-1.4.2",
+            "label": "4.心电图检查",
+            "fields": {
+                "AECOPD-1.4.2": {
+                    "id": "AECOPD-1.4.2",
+                    "label": "心电图检查评估",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [{
+                            "value": "a",
+                            "name": "心律失常"
+                        },
+                        {
+                            "value": "b",
+                            "name": "心肌缺血"
+                        },
+                        {
+                            "value": "c",
+                            "name": "右心室肥厚"
+                        },
+                        {
+                            "value": "d",
+                            "name": "正常或大致正常"
+                        }
+                    ]
+                }
+            }
+        },
+        "AECOPD-1.5.1": {
+            "tips": "数据收集问题：在住院病历的入院志或者首次病程记录中提取入院后是否实施首次实验室检查评估的信息？",
+            "id": "AECOPD-1.5.1",
+            "label": "5.实验室检查",
+            "fields": {
+                "AECOPD-1.5.1": {
+                    "id": "AECOPD-1.5.1",
+                    "label": "入院后实施首次实验室检查评估?",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [{
+                            "value": "y",
+                            "name": "选择y者为是,请同时应进行以下选择项"
+                        },
+                        {
+                            "value": "n",
+                            "name": "选择n者为否,以下栏关闭,请直接进入AECOPD-1.2"
+                        }
+                    ]
+                }
+            }
+        },
+        "AECOPD-1.5.2": {
+            "tips": "数据收集问题：在住院病历的入院志或者首次病程记录中提取急诊或入院后首次实验室检查的评价结果?",
+            "id": "AECOPD-1.5.2",
+            "label": "5.实验室检查",
+            "fields": {
+                "AECOPD-1.5.2": {
+                    "id": "AECOPD-1.5.2",
+                    "label": "实验室检查评估",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [{
+                            "value": "a",
+                            "name": "红细胞沉降率(ESR)"
+                        },
+                        {
+                            "value": "b",
+                            "name": "C反应蛋白(CRP)浓度"
+                        },
+                        {
+                            "value": "c",
+                            "name": "血清降钙素原(PCT)浓度"
+                        },
+                        {
+                            "value": "d",
+                            "name": "血浆D-2聚体"
+                        }
+                    ]
+                }
+            }
+        },
+        "AECOPD-2.1": {
+            "tips": "数据收集问题：在住院病历的入院志或者首次病程记录中提取收住院符合指征（适用于全部AECOPD住院患者）?",
+            "id": "AECOPD-2.1",
+            "label": "1.收住院符合指征（适用于全部AECOPD住院患者）",
+            "fields": {
+                "AECOPD-2.1": {
+                    "id": "AECOPD-2.1",
+                    "label": "收住院符合指征（适用于全部AECOPD住院患者）的选择",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [{
+                            "value": "y",
+                            "name": "症状明显加重，如短期出现的静息状况下呼吸困难等；"
+                        },
+                        {
+                            "value": "n",
+                            "name": "出现新的体征或原有体征加重，如发绀、外周水肿等；"
+                        },
+                        {
+                            "value": "a",
+                            "name": "新近发生的心律失常；"
+                        },
+                        {
+                            "value": "b",
+                            "name": "有严重的伴随疾病；"
+                        },
+                        {
+                            "value": "c",
+                            "name": "初始治疗方案失败；"
+                        },
+                        {
+                            "value": "d",
+                            "name": "年龄＞50岁；"
+                        },
+                        {
+                            "value": "e",
+                            "name": "诊断不明确；"
+                        },
+                        {
+                            "value": "f",
+                            "name": "院外治疗效果欠佳。"
+                        }
+                    ]
+                }
+            }
+        },
+        "AECOPD-2.2": {
+            "tips": "数据收集问题：在住院病历的入院志或者首次病程记录中提取符合收住ICU符合指征?",
+            "id": "AECOPD-2.2",
+            "label": "2.收住ICU符合指征",
+            "fields": {
+                "AECOPD-2.2": {
+                    "id": "AECOPD-2.2",
+                    "label": "收住ICU符合指征的选择",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [{
+                            "value": "g",
+                            "name": "严重呼吸困难且对初始治疗反应不佳"
+                        },
+                        {
+                            "value": "h",
+                            "name": "出现精神障碍，如嗜睡、昏迷"
+                        },
+                        {
+                            "value": "i",
+                            "name": "经氧疗和无创正压通气（NIPPV）治疗后，仍存在严重低氧血症（PaO2＜50mmHg）和（或）严重高碳酸血症（PaCO2＞70mmHg）和（或）严重呼吸性酸中毒（pH＜7.30）无缓解或者恶化"
+                        }
+                    ]
+                }
+            }
+        },
+        "AECOPD-2.3": {
+            "tips": "数据收集问题：在住院病历的入院志或者首次病程记录中提取入住ICU时机?",
+            "id": "AECOPD-2.3",
+            "label": "3.入住ICU时机",
+            "fields": {
+                "AECOPD-2.3": {
+                    "id": "AECOPD-2.3",
+                    "label": "入住ICU时机的选择",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [{
+                            "value": "a",
+                            "name": "住院后再转入ICU"
+                        },
+                        {
+                            "value": "b",
+                            "name": "直接收住ICU"
+                        },
+                        {
+                            "value": "c",
+                            "name": "住院24小时内转入ICU"
+                        },
+                        {
+                            "value": "d",
+                            "name": "住院48小时内转入ICU"
+                        },
+                        {
+                            "value": "e",
+                            "name": "住院72小时内转入ICU"
+                        },
+                        {
+                            "value": "f",
+                            "name": "住院72小时后转入ICU"
+                        }
+                    ]
+                }
+            }
+        },
+        "AECOPD-3.1": {
+            "tips": "数据收集问题：在住院病历的入院志或者首次病程记录或者检验报告中提取急诊或入院后首次 氧合评估的信息？",
+            "id": "AECOPD-3.1",
+            "label": "1.氧疗方法",
+            "fields": {
+                "AECOPD-3.1": {
+                    "id": "AECOPD-3.1",
+                    "label": "氧疗方法",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [{
+                            "value": "a",
+                            "name": "〇鼻导管吸氧"
+                        },
+                        {
+                            "value": "b",
+                            "name": "〇Venturi面罩"
+                        }
+                    ]
+                }
+            }
+        },
+        "AECOPD-3.2": {
+            "tips": "数据收集问题：在住院病历的入院志或者首次病程记录或者检验报告中提取急诊或入院后首次 氧合评估的信息？",
+            "id": "AECOPD-3.2",
+            "label": "2.氧疗30min 后应复查动脉血气",
+            "fields": {
+                "AECOPD-3.2": {
+                    "id": "AECOPD-3.2",
+                    "label": "氧疗30min 后应复查动脉血气",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [{
+                            "value": "y",
+                            "name": "选择y者为是复查动脉血气"
+                        },
+                        {
+                            "value": "n",
+                            "name": "选择n者为否,不复查动脉血气"
+                        }
+                    ]
+                }
+            }
+        },
+        "AECOPD-4.1.1": {
+            "tips": "数据收集问题：在住院病历的入院志或者首次病程记录,治疗医嘱单长期医嘱中提取非重症患者起始抗菌药物选择？",
+            "id": "AECOPD-4.1.1",
+            "label": "1.用药前病情判定分层",
+            "fields": {
+                "AECOPD-4.1.1": {
+                    "id": "AECOPD-4.1.1",
+                    "label": "1用药前病情判定分层",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [{
+                            "value": "a",
+                            "name": "A.轻度及中度COPD急性加重(可能的病原菌为流感嗜血杆菌、肺炎链球菌、卡他莫拉菌等)"
+                        },
+                        {
+                            "value": "b",
+                            "name": "B.重度及极重度COPD急性加重(可能的病原菌为流感嗜血杆菌、肺炎链球菌、卡他莫拉菌、肺炎克雷伯菌、大肠杆菌、肠杆菌属等)，无铜绿假单孢菌感染危险因素"
+                        },
+                        {
+                            "value": "c",
+                            "name": "C.重度及极重度COPD急性加重(可能的病原菌为流感嗜血杆菌、肺炎链球菌、卡他莫拉菌、肺炎克雷伯菌、大肠杆菌、肠杆菌属等)，有铜绿假单孢菌感染危险因素"
+                        }
+                    ]
+                }
+            }
+        },
+        "AECOPD-4.1.2.1": {
+            "tips": "数据收集问题：在住院病历的入院志或者首次病程记录,治疗医嘱单长期医嘱中提取非重症患者起始抗菌药物选择？",
+            "id": "AECOPD-4.1.2.1",
+            "label": "2.患者起始抗菌药物选择",
+            "fields": {
+                "AECOPD-4.1.2.1": {
+                    "id": "AECOPD-4.1.2.1",
+                    "label": "A.轻度及中度COPD急性加重",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [{
+                            "value": "a",
+                            "name": "青霉素、β内酰胺类/β内酰胺酶抑制剂（阿莫西林-克拉维酸钾等）"
+                        },
+                        {
+                            "value": "b",
+                            "name": "大环内酯类(阿奇霉素、克拉霉素、罗红霉素等）"
+                        },
+                        {
+                            "value": "c",
+                            "name": "第一代或第二代头孢菌素（头孢呋辛、头孢克洛等）"
+                        },
+                        {
+                            "value": "d",
+                            "name": "多西环素"
+                        },
+                        {
+                            "value": "e",
+                            "name": "氟喹诺酮等"
+                        },
+                        {
+                            "value": "f",
+                            "name": "其他抗菌药（请用10个字说明药物的“通用名”）"
+                        }
+                    ]
+                },
+                "AECOPD-4.1.2.2": {
+                    "id": "AECOPD-4.1.2.2",
+                    "label": "B.重度及极重度COPD急性加重，无铜绿假单孢菌感染危险因素",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [{
+                            "value": "a",
+                            "name": "β-内酰胺类/β-内酰胺酶抑制剂"
+                        },
+                        {
+                            "value": "b",
+                            "name": "第二代头孢菌素（头孢呋辛等）"
+                        },
+                        {
+                            "value": "c",
+                            "name": "氟喹诺酮类（左氧氟沙星、莫昔沙星、加替沙星等）"
+                        },
+                        {
+                            "value": "d",
+                            "name": "第三代头孢菌素（头孢曲松钠、头孢噻肟钠等）"
+                        },
+                        {
+                            "value": "e",
+                            "name": "厄他培南"
+                        },
+                        {
+                            "value": "f",
+                            "name": "其他抗菌药（请用10个字说明药物的“通用名”）"
+                        }
+                    ]
+                },
+                "AECOPD-4.1.2.3": {
+                    "id": "AECOPD-4.1.2.3",
+                    "label": "C.重度及极重度COPD急性加重，有铜绿假单孢菌感染危险因素",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [{
+                            "value": "a",
+                            "name": "第三代头孢菌素（头孢他啶）或第四代头孢菌素"
+                        },
+                        {
+                            "value": "b",
+                            "name": "头孢哌酮钠-舒巴坦钠"
+                        },
+                        {
+                            "value": "c",
+                            "name": "哌拉西林钠-他唑巴坦钠"
+                        },
+                        {
+                            "value": "d",
+                            "name": "碳青霉烯类（亚胺培南、美罗培南）"
+                        },
+                        {
+                            "value": "e",
+                            "name": "联合治疗，包括联合氨基糖苷类、氟喹诺酮类"
+                        },
+                        {
+                            "value": "f",
+                            "name": "其他抗菌药（请用10个字说明药物的“通用名”）"
+                        }
+                    ]
+                }
+            }
+        },
+        "AECOPD-4.1.3": {
+            "tips": "数据收集问题：在住院病历的入院志或者首次病程记录,治疗医嘱单中提取患者接受首剂抗菌药物治疗时间？",
+            "id": "AECOPD-4.1.3",
+            "label": "3.患者接受首剂抗菌药物治疗（注射剂输入/注射）时间",
+            "fields": {
+                "AECOPD-4.1.3.1": {
+                    "id": "AECOPD-4.1.3",
+                    "label": "注射剂输入/注射日期",
+                    "fieldtype": "日期",
+                    "fieldsize": "10",
+                    "limits": "1"
+                },
+                "AECOPD-4.1.3.2": {
+                    "id": "AECOPD-4.1.3",
+                    "label": "注射剂输入/注射时间",
+                    "fieldtype": "时间",
+                    "fieldsize": "5",
+                    "limits": "1"
+                }
+            }
+        },
+        "AECOPD-4.1.4": {
+            "tips": "数据收集问题：在住院病历的入院志或者首次病程记录中提取患者接受首剂抗菌药物使用时机？",
+            "id": "AECOPD-4.1.4",
+            "label": "4.接受首剂抗菌药物使用时机 DTN(Door-To-Needle)",
+            "fields": {
+                "AECOPD-4.1.4": {
+                    "id": "AECOPD-4.1.4",
+                    "label": "接受首剂抗菌药物使用时机",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [{
+                            "value": "a",
+                            "name": "入院≤4h使用首剂抗菌药物"
+                        },
+                        {
+                            "value": "b",
+                            "name": "入院≤6h使用首剂抗菌药物"
+                        },
+                        {
+                            "value": "c",
+                            "name": "入院≤8h使用首剂抗菌药物"
+                        },
+                        {
+                            "value": "d",
+                            "name": "入院≥8h使用首剂抗菌药物"
+                        },
+                        {
+                            "value": "e",
+                            "name": "入院之前己经使用了抗菌药物"
+                        }
+                    ]
+                }
+            }
+        },
+        "AECOPD-4.2.1.1": {
+            "tips": "数据收集问题：在住院病历的入院志或者首次病程记录或者检验报告中提取病原学诊断的信息？",
+            "id": "AECOPD-4.2.1.1",
+            "label": "1.病原学诊断结果",
+            "fields": {
+                "AECOPD-4.2.1.1": {
+                    "id": "AECOPD-4.2.1.1",
+                    "label": "入院后首次病原学检测",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [{
+                            "value": "y",
+                            "name": "选择y者为是"
+                        },
+                        {
+                            "value": "n",
+                            "name": "选择n者为否,"
+                        }
+                    ]
+                }
+            }
+        },
+        "AECOPD-4.2.1.2": {
+            "tips": "数据收集问题：在住院病历的入院志或者病程记录,病原学诊断报告中提取病原学诊断结果？",
+            "id": "AECOPD-4.2.1.2",
+            "label": "1.病原学诊断结果",
+            "fields": {
+                "AECOPD-4.2.1.2": {
+                    "id": "AECOPD-4.2.1.2",
+                    "label": "病原学诊断结果选择",
+                    "fieldtype": "",
+                    "fieldsize": "",
+                    "limits": "",
+                    "options": [{
+                            "value": "a",
+                            "name": "肺炎链球菌"
+                        },
+                        {
+                            "value": "b",
+                            "name": "流感嗜血杆菌、卡他莫拉菌,"
+                        },
+                        {
+                            "value": "c",
+                            "name": "甲氧西林敏感金黄色葡萄球菌（MSSA）,"
+                        },
+                        {
+                            "value": "d",
+                            "name": "甲氧西林敏感凝固酶阴性葡萄球菌（MSCNS）,"
+                        },
+                        {
+                            "value": "e",
+                            "name": "甲氧西林耐药金黄色葡萄球菌（MRSA）,"
+                        },
+                        {
+                            "value": "f",
+                            "name": "甲氧西林耐药凝固酶阴性葡萄球菌（MRCNS）,"
+                        },
+                        {
+                            "value": "g",
+                            "name": "肠杆菌科细菌：不产生ESBLs菌,"
+                        },
+                        {
+                            "value": "h",
+                            "name": "肠杆菌科细菌：产ESBLs菌,"
+                        },
+                        {
+                            "value": "i",
+                            "name": "肠杆菌科细菌：产AmpC酶菌,"
+                        },
+                        {
+                            "value": "j",
+                            "name": "铜绿假单胞菌（轻度者）,"
+                        },
+                        {
+                            "value": "k",
+                            "name": "铜绿假单胞菌,"
+                        },
+                        {
+                            "value": "l",
+                            "name": "B族链球菌,"
+                        },
+                        {
+                            "value": "m",
+                            "name": "厌氧菌,"
+                        },
+                        {
+                            "value": "n",
+                            "name": "单核细胞增多性李斯特菌,"
+                        },
+                        {
+                            "value": "o",
+                            "name": "嗜肺军团菌,"
+                        },
+                        {
+                            "value": "p",
+                            "name": "百日咳杆菌/肺炎支原体/衣原体,"
+                        }
+                    ]
+                }
+            }
+        },
+        "AECOPD-4.2.2.1": {
+            "tips": "数据收集问题：在住院病历的入院志或者首次病程记录,治疗医嘱单长期医嘱中提取在获得病原学诊断结果之后的首选目标抗感染药物的信息？",
+            "id": "AECOPD-4.2.2.1",
+            "label": "2.获得病原学诊断结果之后首选目标抗感染药物的选择",
+            "fields": {
+                "AECOPD-4.2.2.1": {
+                    "id": "AECOPD-4.2.2.1",
+                    "label": "A.青霉素类抗感染药物的选择",
+                    "fieldtype": "",
+                    "fieldsize": "",
+                    "limits": "",
+                    "options": [{
+                            "value": "a",
+                            "name": "A1.青霉素G(penicillin G)"
+                        },
+                        {
+                            "value": "b",
+                            "name": "A2.青霉素V(penicillin V),"
+                        },
+                        {
+                            "value": "c",
+                            "name": "A3.氨苄西林(ampicillin),"
+                        },
+                        {
+                            "value": "d",
+                            "name": "A4.阿莫西林(amoxicillin),"
+                        },
+                        {
+                            "value": "e",
+                            "name": "A5.羧苄西林(carbenicillin),"
+                        },
+                        {
+                            "value": "f",
+                            "name": "A6.美洛西林(mezloeillin),"
+                        },
+                        {
+                            "value": "g",
+                            "name": "A7.哌拉西林(piperacillin),"
+                        },
+                        {
+                            "value": "h",
+                            "name": "A8.苯唑西林(oxacillin),"
+                        },
+                        {
+                            "value": "i",
+                            "name": "A9.氯唑西林(cloxacillin),"
+                        },
+                        {
+                            "value": "j",
+                            "name": "A10.氨苄西林+舒巴坦(ampicillin／sulbactam),"
+                        },
+                        {
+                            "value": "k",
+                            "name": "A11.阿莫西林+克拉维酸(amoxicillin／clavulanic acid),"
+                        },
+                        {
+                            "value": "l",
+                            "name": "A12.替卡西林+克拉维酸(ticarcillin／clavulanic acid),"
+                        },
+                        {
+                            "value": "m",
+                            "name": "A13.哌拉西林+他唑巴坦(piperacillin／tazobactam)"
+                        },
+                        {
+                            "value": "n",
+                            "name": "A14.阿莫西林+舒巴坦(amoxiciHin—sulbactam)"
+                        },
+                        {
+                            "value": "r",
+                            "name": "其他青霉素类抗菌药（请用10个字说明药物的“通用名”）,"
+                        }
+                    ]
+                },
+                "AECOPD-4.2.2.2": {
+                    "id": "AECOPD-4.2.2.2",
+                    "label": "B.头孢菌素类抗感染药物的选择",
+                    "fieldtype": "",
+                    "fieldsize": "",
+                    "limits": "",
+                    "options": [{
+                            "value": "a",
+                            "name": "B1.头孢拉定(cefradine)"
+                        },
+                        {
+                            "value": "b",
+                            "name": "B2.头孢唑啉(cefazolin)"
+                        },
+                        {
+                            "value": "c",
+                            "name": "B3.头孢羟氨苄(cefadroxil)"
+                        },
+                        {
+                            "value": "d",
+                            "name": "B4.头孢克洛(cefaclor)"
+                        },
+                        {
+                            "value": "e",
+                            "name": "B5头孢丙烯(cefprozil)"
+                        },
+                        {
+                            "value": "f",
+                            "name": "B6.头孢地尼(cefdinir)"
+                        },
+                        {
+                            "value": "g",
+                            "name": "B7.头孢呋辛(cefuroxime)"
+                        },
+                        {
+                            "value": "h",
+                            "name": "B8.头孢噻肟(cefotaxime)"
+                        },
+                        {
+                            "value": "i",
+                            "name": "B9.头孢曲松(ceftriaxone)"
+                        },
+                        {
+                            "value": "j",
+                            "name": "B10.头孢哌酮(cefoperazone)"
+                        },
+                        {
+                            "value": "k",
+                            "name": "B11.头孢他啶(ceftazidime),"
+                        },
+                        {
+                            "value": "l",
+                            "name": "B12.头孢哌酮+舒巴坦(cefoperazone／culbactam),"
+                        },
+                        {
+                            "value": "m",
+                            "name": "B13.头孢吡肟(cefapime),"
+                        },
+                        {
+                            "value": "n",
+                            "name": "其他头孢菌素类抗菌药（请用10个字说明药物的“通用名”）,"
+                        }
+                    ]
+                },
+                "AECOPD-4.2.2.3": {
+                    "id": "AECOPD-4.2.2.3",
+                    "label": "C.大环内酯类抗感染药物的选择",
+                    "fieldtype": "",
+                    "fieldsize": "",
+                    "limits": "",
+                    "options": [{
+                            "value": "a",
+                            "name": "C1.红霉素(erythromycin)"
+                        },
+                        {
+                            "value": "b",
+                            "name": "C2.罗红霉素(roxithromycin)"
+                        },
+                        {
+                            "value": "c",
+                            "name": "C3.阿奇霉素(azithromycin)"
+                        },
+                        {
+                            "value": "d",
+                            "name": "C4.克拉霉素(clarithromycin)"
+                        },
+                        {
+                            "value": "e",
+                            "name": "其他大环内酯类抗菌药（请用10个字说明药物的“通用名”）"
+                        }
+                    ]
+                },
+                "AECOPD-4.2.2.4": {
+                    "id": "AECOPD-4.2.2.4",
+                    "label": "D.喹诺酮类抗感染药物的选择",
+                    "fieldtype": "",
+                    "fieldsize": "",
+                    "limits": "",
+                    "options": [{
+                            "value": "a",
+                            "name": "D1.左氧氟沙星"
+                        },
+                        {
+                            "value": "b",
+                            "name": "D2.莫西沙星"
+                        },
+                        {
+                            "value": "c",
+                            "name": "D3.吉米沙星"
+                        },
+                        {
+                            "value": "d",
+                            "name": "D4.环丙沙星"
+                        },
+                        {
+                            "value": "e",
+                            "name": "其他.喹诺酮类抗菌药（请用10个字说明药物的“通用名”）"
+                        }
+                    ]
+                },
+                "AECOPD-4.2.2.5": {
+                    "id": "AECOPD-4.2.2.5",
+                    "label": "E.其他类抗感染药物的选择",
+                    "fieldtype": "",
+                    "fieldsize": "",
+                    "limits": "",
+                    "options": [{
+                            "value": "a",
+                            "name": "E1.多西环素(doxycycline)"
+                        },
+                        {
+                            "value": "b",
+                            "name": "E2.万古霉素(vancomycin)"
+                        },
+                        {
+                            "value": "c",
+                            "name": "E3.利奈唑胺(linezolid)"
+                        },
+                        {
+                            "value": "d",
+                            "name": "E4.利福平(rifampin)"
+                        },
+                        {
+                            "value": "e",
+                            "name": "E5.氨曲南(azla℃onam)"
+                        },
+                        {
+                            "value": "f",
+                            "name": "E6.厄他培南(ertapenem)"
+                        },
+                        {
+                            "value": "g",
+                            "name": "E7.亚胺培南(imipenem)"
+                        },
+                        {
+                            "value": "h",
+                            "name": "E8.美罗培南(mempenem) "
+                        },
+                        {
+                            "value": "i",
+                            "name": "E9.帕尼培南(panipenem) "
+                        },
+                        {
+                            "value": "j",
+                            "name": "E10.克林霉素(clindamycin)"
+                        },
+                        {
+                            "value": "k",
+                            "name": "E11.甲硝唑(metronidazole)"
+                        },
+                        {
+                            "value": "l",
+                            "name": "其他抗菌药（请用10个字说明药物的“通用名”）"
+                        }
+                    ]
+                }
+            }
+        },
+        "AECOPD-5.1": {
+            "tips": "数据收集问题：在住院病历的入院志或者病程记录中提取是否在初始治疗72小时后评价的信息？",
+            "id": "AECOPD-5.1",
+            "label": "1.支气管舒张剂",
+            "fields": {
+                "AECOPD-5.1": {
+                    "id": "AECOPD-5.1",
+                    "label": "支气管舒张剂药物的选择",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [{
+                            "value": "a",
+                            "name": "β2受体激动剂"
+                        },
+                        {
+                            "value": "b",
+                            "name": "抗胆碱能药物（异丙托溴铵、噻托溴铵等）"
+                        },
+                        {
+                            "value": "c",
+                            "name": "茶碱类药物"
+                        },
+                        {
+                            "value": "d",
+                            "name": "其他药（请用10个字说明药物的“通用名”）"
+                        },
+                        {
+                            "value": "UTD",
+                            "name": "无法确定或无记录"
+                        }
+                    ]
+                }
+            }
+        },
+        "AECOPD-5.2": {
+            "tips": "数据收集问题：在住院病历的入院志或者病程记录中提取是否在初始治疗72小时后评价的信息？",
+            "id": "AECOPD-5.2",
+            "label": "2.糖皮质激素",
+            "fields": {
+                "AECOPD-5.2": {
+                    "id": "AECOPD-5.2",
+                    "label": "糖皮质激素药物的选择",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [{
+                            "value": "a",
+                            "name": "口服泼尼松龙，连续7～10d后减量停药"
+                        },
+                        {
+                            "value": "b",
+                            "name": "静脉滴注糖皮质激素"
+                        },
+                        {
+                            "value": "c",
+                            "name": "先静脉给予甲泼尼龙，3～5d后改为口服"
+                        },
+                        {
+                            "value": "d",
+                            "name": "其他药（请用10个字说明药物的“通用名”）"
+                        },
+                        {
+                            "value": "UTD",
+                            "name": "无法确定或无记录"
+                        }
+                    ]
+                }
+            }
+        },
+        "AECOPD-5.3": {
+            "tips": "数据收集问题：在住院病历的入院志或者病程记录中提取是否在初始治疗72小时后评价的信息？",
+            "id": "AECOPD-5.3",
+            "label": "3.对静脉使用茶碱类药物患者",
+            "fields": {
+                "AECOPD-5.3": {
+                    "id": "AECOPD-5.3",
+                    "label": "实施血清茶碱浓度监测?",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [{
+                            "value": "y",
+                            "name": "选择y者为是"
+                        },
+                        {
+                            "value": "n",
+                            "name": "选择n者为否"
+                        }
+                    ]
+                }
+            }
+        },
+        "AECOPD-6.1.1": {
+            "tips": "数据收集问题：在住院病历的入院志或者病程记录中提取是否有心功不全的信息？",
+            "id": "AECOPD-6.1.1",
+            "label": "1.有心功不全时",
+            "fields": {
+                "AECOPD-6.1.1": {
+                    "id": "AECOPD-6.1.1",
+                    "label": "有心功不全?",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [{
+                            "value": "y",
+                            "name": "选择y者为是"
+                        },
+                        {
+                            "value": "n",
+                            "name": "选择n者为否"
+                        }
+                    ]
+                }
+            }
+        },
+        "AECOPD-6.1.2": {
+            "tips": "数据收集问题：在住院病历的入院志或者病程记录、医嘱治疗单中提取对心功不全处置的信息？",
+            "id": "AECOPD-6.1.2",
+            "label": "1.有心功不全时",
+            "fields": {
+                "AECOPD-6.1.2": {
+                    "id": "AECOPD-6.1.2",
+                    "label": "首位处置项目的选择",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [{
+                            "value": "a",
+                            "name": "利尿剂（无禁忌证）"
+                        },
+                        {
+                            "value": "b",
+                            "name": "强心剂（无禁忌证）"
+                        },
+                        {
+                            "value": "c",
+                            "name": "血管扩张剂（无禁忌证）"
+                        },
+                        {
+                            "value": "d",
+                            "name": "心律失常药物（无禁忌证）"
+                        },
+                        {
+                            "value": "e",
+                            "name": "其他药（请用10个字说明药物的“通用名”）"
+                        }
+                    ]
+                }
+            }
+        },
+        "AECOPD-6.2.1": {
+            "tips": "数据收集问题：在住院病历的入院志或者病程记录中提取是否有肺动脉高压和右心功能不全的信息？",
+            "id": "AECOPD-6.2.1",
+            "label": "2.有肺动脉高压和右心功能不全时",
+            "fields": {
+                "AECOPD-6.2.1": {
+                    "id": "AECOPD-6.2.1",
+                    "label": "有肺动脉高压和右心功能不全?",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [{
+                            "value": "y",
+                            "name": "选择y者为是,"
+                        },
+                        {
+                            "value": "n",
+                            "name": "选择n者为否"
+                        }
+                    ]
+                }
+            }
+        },
+        "AECOPD-6.2.2": {
+            "tips": "数据收集问题：在住院病历的入院志或者病程记录、医嘱治疗单中提取对肺动脉高压和右心功能不全处置的信息？",
+            "id": "AECOPD-6.2.2",
+            "label": "2.有肺动脉高压和右心功能不全时",
+            "fields": {
+                "AECOPD-6.2.2": {
+                    "id": "AECOPD-6.2.2",
+                    "label": "首位处置项目的选择",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [{
+                            "value": "a",
+                            "name": "血管扩张剂（无禁忌症）"
+                        },
+                        {
+                            "value": "b",
+                            "name": "其他药（请用10个字说明药物的“通用名”）"
+                        }
+                    ]
+                }
+            }
+        },
+        "AECOPD-6.3.1": {
+            "tips": "数据收集问题：在住院病历的入院志或者病程记录中提取是否有血栓形成高危因素的信息？",
+            "id": "AECOPD-6.3.1",
+            "label": "3.有血栓形成高危因素时",
+            "fields": {
+                "AECOPD-6.3.1": {
+                    "id": "AECOPD-6.3.1",
+                    "label": "血栓形成高危因素?",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [{
+                            "value": "y",
+                            "name": "选择y者为是,"
+                        },
+                        {
+                            "value": "n",
+                            "name": "选择n者为否"
+                        }
+                    ]
+                }
+            }
+        },
+        "AECOPD-6.3.2": {
+            "tips": "数据收集问题：在住院病历的入院志或者病程记录、医嘱治疗单中提取对血栓形成高危因素处置的信息？",
+            "id": "AECOPD-6.3.2",
+            "label": "3.有血栓形成高危因素时",
+            "fields": {
+                "AECOPD-6.3.2": {
+                    "id": "AECOPD-6.3.2",
+                    "label": "首位处置项目的选择",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [{
+                            "value": "a",
+                            "name": "肝素或低分子肝素"
+                        },
+                        {
+                            "value": "b",
+                            "name": "溶栓治疗"
+                        },
+                        {
+                            "value": "c",
+                            "name": "其他药（请用10个字说明药物的“通用名”）"
+                        }
+                    ]
+                }
+            }
+        },
+        "AECOPD-6.4.1": {
+            "tips": "数据收集问题：在住院病历的入院志或者病程记录中提取是否有心功不全的信息？",
+            "id": "AECOPD-6.4.1",
+            "label": "4.有呼吸功能不全时",
+            "fields": {
+                "AECOPD-6.4.1": {
+                    "id": "AECOPD-6.4.1",
+                    "label": "有呼吸功能不全?",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [{
+                            "value": "y",
+                            "name": "选择y者为是,"
+                        },
+                        {
+                            "value": "n",
+                            "name": "选择n者为否"
+                        }
+                    ]
+                }
+            }
+        },
+        "AECOPD-6.4.2": {
+            "tips": "数据收集问题：在住院病历的入院志或者病程记录、医嘱治疗单中提取对心功不全处置的信息？",
+            "id": "AECOPD-6.4.2",
+            "label": "4.有呼吸功能不全时",
+            "fields": {
+                "AECOPD-6.4.2": {
+                    "id": "AECOPD-6.4.2",
+                    "label": "首位处置项目的选择",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [{
+                            "value": "a",
+                            "name": "呼吸兴奋剂（无禁忌证）（若无条件使用或不同意使用机械通气，在努力保持气道通畅的前提下可选用）"
+                        },
+                        {
+                            "value": "b",
+                            "name": "其他药（请用10个字说明药物的“通用名”）"
+                        }
+                    ]
+                }
+            }
+        },
+        "AECOPD-6.5.1": {
+            "tips": "数据收集问题：在住院病历的入院志或者病程记录中提取是否有心功不全的信息？",
+            "id": "AECOPD-6.5.1",
+            "label": "5.有气胸时",
+            "fields": {
+                "AECOPD-6.5.1": {
+                    "id": "AECOPD-6.5.1",
+                    "label": "有气胸时?",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [{
+                            "value": "y",
+                            "name": "选择y者为是,"
+                        },
+                        {
+                            "value": "n",
+                            "name": "选择n者为否"
+                        }
+                    ]
+                }
+            }
+        },
+        "AECOPD-6.5.2": {
+            "tips": "数据收集问题：在住院病历的入院志或者病程记录、医嘱治疗单中提取对心功不全处置的信息？",
+            "id": "AECOPD-6.5.2",
+            "label": "5.有气胸时",
+            "fields": {
+                "AECOPD-6.5.2": {
+                    "id": "AECOPD-6.5.2",
+                    "label": "首位处置项目的选择",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [{
+                            "value": "a",
+                            "name": "胸腔闭式引流术"
+                        },
+                        {
+                            "value": "b",
+                            "name": "其他（注明药名）"
+                        }
+                    ]
+                }
+            }
+        },
+        "AECOPD-7.1.1": {
+            "tips": "数据收集问题：在住院病历的入院志或者病程记录中提取是否有无创正压通气（NIPPV）的信息？",
+            "id": "AECOPD-7.1.1",
+            "label": "1 无创正压通气（NIPPV）",
+            "fields": {
+                "AECOPD-7.1.1": {
+                    "id": "AECOPD-7.1.1",
+                    "label": "实施无创正压通气（NIPPV）?",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [{
+                            "value": "y",
+                            "name": "选择y者为是,"
+                        },
+                        {
+                            "value": "n",
+                            "name": "选择n者为否"
+                        }
+                    ]
+                }
+            }
+        },
+        "AECOPD-7.1.2": {
+            "tips": "数据收集问题：在住院病历的入院志或者首次病程记录、治疗医嘱单长期医嘱中提取患者接受无创正压通气（NIPPV）指征(至少符合下述中的2项)的信息？",
+            "id": "AECOPD-7.1.2",
+            "label": "1 无创正压通气（NIPPV）",
+            "fields": {
+                "AECOPD-7.1.2": {
+                    "id": "AECOPD-7.1.2",
+                    "label": "无创正压通气的应用指征",
+                    "fieldtype": "",
+                    "fieldsize": "",
+                    "limits": ""
+                }
+            }
+        },
+        "AECOPD-7.1.3": {
+            "tips": "数据收集问题：在住院病历的入院志或者首次病程记录、治疗医嘱单长期医嘱中提取患者接受无创正压通气（NIPPV）治疗起始与终止时间的信息？",
+            "id": "AECOPD-7.1.3",
+            "label": "1 无创正压通气（NIPPV）",
+            "fields": {
+                "AECOPD-7.1.3": {
+                    "id": "AECOPD-7.1.3",
+                    "label": "患者无创正压通气起始日期时间",
+                    "fieldtype": "日期",
+                    "fieldsize": "10",
+                    "limits": "1"
+                },
+                "AECOPD-7.1.4": {
+                    "id": "AECOPD-7.1.4",
+                    "label": "患者无创正压通气终止日期时间",
+                    "fieldtype": "日期",
+                    "fieldsize": "10",
+                    "limits": "1"
+                },
+                "AECOPD-7.1.5": {
+                    "id": "AECOPD-7.1.5",
+                    "label": "无创正压通气疗程（天数）",
+                    "fieldtype": "数字",
+                    "fieldsize": "2",
+                    "limits": "1"
+                }
+            }
+        },
+        "AECOPD-7.2.1": {
+            "tips": "数据收集问题：在住院病历的入院志或者病程记录中提取是否有机械通气的信息？",
+            "id": "AECOPD-7.2.1",
+            "label": "2有创机械通气",
+            "fields": {
+                "AECOPD-7.2.1": {
+                    "id": "AECOPD-7.2.1",
+                    "label": "实施有创机械通气?",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [{
+                            "value": "y",
+                            "name": "选择y者为是, "
+                        },
+                        {
+                            "value": "n",
+                            "name": "选择n者为否"
+                        }
+                    ]
+                }
+            }
+        },
+        "AECOPD-7.2.2": {
+            "tips": "数据收集问题：在住院病历的入院志或者首次病程记录、治疗医嘱单长期医嘱中提取患者有创机械通气的具体应用指征的信息？",
+            "id": "AECOPD-7.2.2",
+            "label": "2有创机械通气",
+            "fields": {
+                "AECOPD-7.2.2": {
+                    "id": "AECOPD-7.2.2",
+                    "label": "有有创机械通气的具体应用指征",
+                    "fieldtype": "",
+                    "fieldsize": "",
+                    "limits": "",
+                    "options": [{
+                            "value": "a",
+                            "name": "不能耐受无创通气，或无创通气失败，或存在使用无创通气禁忌证 "
+                        },
+                        {
+                            "value": "b",
+                            "name": "呼吸或心跳骤停"
+                        },
+                        {
+                            "value": "c",
+                            "name": "呼吸暂停导致意识丧失或窒息"
+                        },
+                        {
+                            "value": "d",
+                            "name": "意识模糊、镇静无效的精神运动性躁动"
+                        },
+                        {
+                            "value": "e",
+                            "name": "严重误吸"
+                        },
+                        {
+                            "value": "f",
+                            "name": "持续性气道分泌物排出困难"
+                        },
+                        {
+                            "value": "g",
+                            "name": "心率<50次/分且反应迟钝"
+                        },
+                        {
+                            "value": "h",
+                            "name": "严重的血流动力学不稳定，补液和血管活性药无效"
+                        },
+                        {
+                            "value": "i",
+                            "name": "严重的室性心律失常"
+                        },
+                        {
+                            "value": "j",
+                            "name": "危及生命的低血氧症，且不能耐受无创通气"
+                        }
+                    ]
+                }
+            }
+        },
+        "AECOPD-7.2.3": {
+            "tips": "数据收集问题：在住院病历的入院志或者首次病程记录、治疗医嘱单长期医嘱中提取患者接受有机械通气治疗起始与终止时间的信息？",
+            "id": "AECOPD-7.2.3",
+            "label": "2有创机械通气",
+            "fields": {
+                "AECOPD-7.2.3.1": {
+                    "id": "AECOPD-7.2.3",
+                    "label": "患者有机械通气起始日期时间",
+                    "fieldtype": "日期",
+                    "fieldsize": "10",
+                    "limits": "1"
+                },
+                "AECOPD-7.2.3.2": {
+                    "id": "AECOPD-7.2.3",
+                    "label": "患者有机械通气起始日期时间",
+                    "fieldtype": "时间",
+                    "fieldsize": "5",
+                    "limits": "1"
+                },
+                "AECOPD-7.2.4.1": {
+                    "id": "AECOPD-7.2.4",
+                    "label": "患者有机械通气终止日期时间",
+                    "fieldtype": "日期",
+                    "fieldsize": "10",
+                    "limits": "1"
+                },
+                "AECOPD-7.2.4.2": {
+                    "id": "AECOPD-7.2.4",
+                    "label": "患者有机械通气终止日期时间",
+                    "fieldtype": "时间",
+                    "fieldsize": "5",
+                    "limits": "1"
+                },
+                "AECOPD-7.2.5": {
+                    "id": "AECOPD-7.2.5",
+                    "label": "有机械通气疗程（天数）",
+                    "fieldtype": "数字",
+                    "fieldsize": "2",
+                    "limits": "1"
+                }
+            }
+        },
+        "AECOPD-7.3": {
+            "tips": "数据收集问题：在住院病历的入院志或者病程记录中提取是否有实施有创-无创序贯通气疗法的信息？",
+            "id": "AECOPD-7.3",
+            "label": "3.实施有创-无创序贯通气疗法",
+            "fields": {
+                "AECOPD-7.3": {
+                    "id": "AECOPD-7.3",
+                    "label": "实施实施有创-无创序贯通气疗法?",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [{
+                            "value": "y",
+                            "name": "选择y者为是,"
+                        },
+                        {
+                            "value": "n",
+                            "name": "选择n者为否"
+                        }
+                    ]
+                }
+            }
+        },
+        "AECOPD-8.1": {
+            "tips": "数据收集问题：在住院病历的入院志或者护理记录或者病程记录中提取实施戒烟建议/戒烟治疗的信息？",
+            "id": "AECOPD-8.1",
+            "label": "1.吸烟史(可选)",
+            "fields": {
+                "AECOPD-8.1": {
+                    "id": "AECOPD-8.1",
+                    "label": "吸烟史？",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [{
+                            "value": "y",
+                            "name": "选择y者为是, 近一年内有吸烟史，烟草使用状况"
+                        },
+                        {
+                            "value": "n",
+                            "name": "选择n者为否, 患者不吸烟"
+                        }
+                    ]
+                }
+            }
+        },
+        "AECOPD-8.2": {
+            "tips": "",
+            "id": "AECOPD-8.2",
+            "label": "2.吸烟程度评估",
+            "fields": {
+                "AECOPD-8.2": {
+                    "id": "AECOPD-8.2",
+                    "label": "吸烟程度评估有记录？",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [{
+                            "value": "a",
+                            "name": "入院前30天内每天抽的烟平均5支或更多的香烟（≥1/4包）"
+                        },
+                        {
+                            "value": "b",
+                            "name": "入院前30天内每天抽的烟平均4支或更少的香烟（<1/4包）"
+                        },
+                        {
+                            "value": "c",
+                            "name": "病人入院前的30天已不使用任何形式烟草"
+                        },
+                        {
+                            "value": "UTD",
+                            "name": "无法确定或无记录"
+                        }
+                    ]
+                }
+            }
+        },
+        "AECOPD-8.3": {
+            "tips": "",
+            "id": "AECOPD-8.3",
+            "label": "3.接受戒烟的建议或者戒烟治疗",
+            "fields": {
+                "AECOPD-8.3": {
+                    "id": "AECOPD-8.3",
+                    "label": "接受戒烟的建议或者戒烟治疗有记录？",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [{
+                            "value": "a",
+                            "name": "烟草使用的治疗实践辅导"
+                        },
+                        {
+                            "value": "b",
+                            "name": "使用国家药品食品管理局批准的戒烟药物实施戒烟治疗"
+                        },
+                        {
+                            "value": "c",
+                            "name": "不接受戒烟药物实施戒烟治疗"
+                        }
+                    ]
+                }
+            }
+        },
+        "AECOPD-8.4": {
+            "tips": "数据收集问题：在交与患者的出院小结或记录中有告知末次风险程度评估结果的记录和同时履行口头再告知的信息？知障者告知其亲属的5项信息？",
+            "id": "AECOPD-8.4",
+            "label": "4.知情告知:出院前末次风险程度评估的结果",
+            "fields": {
+                "AECOPD-8.4": {
+                    "id": "AECOPD-8.4",
+                    "label": "交与患者的出院小结或记录中有告知记录和同时履行口头再告知,知障患者告知其亲属",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "5",
+                    "options": [{
+                            "value": "a",
+                            "name": "告知AECOPD发生的危险因素"
+                        },
+                        {
+                            "value": "b",
+                            "name": "叮嘱患者尽量避免或防止粉尘、烟雾及有害气体吸入"
+                        },
+                        {
+                            "value": "c",
+                            "name": "帮助患者掌握AECOPD的基础知识，学会自我控制疾病的要点和方法"
+                        },
+                        {
+                            "value": "d",
+                            "name": "使患者知晓出院带药品及如何正确使用"
+                        },
+                        {
+                            "value": "e",
+                            "name": "使患者知晓发作时症状，何时应往医院急诊"
+                        }
+                    ]
+                }
+            }
+        },
+        "AECOPD-9.1": {
+            "tips": "数据收集问题：在住院病历首页中提取住院天数的信息？",
+            "id": "AECOPD-9.1",
+            "label": "1.住院天数",
+            "fields": {
+                "AECOPD-9.1.1": {
+                    "id": "AECOPD-9.1",
+                    "label": "入院日期",
+                    "fieldtype": "日期",
+                    "fieldsize": "10",
+                    "limits": "1"
+                },
+                "AECOPD-9.1.2": {
+                    "id": "AECOPD-9.1",
+                    "label": "出院日期",
+                    "fieldtype": "日期",
+                    "fieldsize": "10",
+                    "limits": "1"
+                },
+                "AECOPD-9.1.3": {
+                    "id": "AECOPD-9.1",
+                    "label": "住院天数",
+                    "fieldtype": "数字",
+                    "fieldsize": "3",
+                    "limits": "1"
+                }
+            }
+        },
+        "AECOPD-9.2.1": {
+            "tips": "数据收集问题：在住院病历首页中提取离院方式选择的信息？",
+            "id": "AECOPD-9.2.1",
+            "label": "2.离院方式",
+            "fields": {
+                "AECOPD-9.2.1": {
+                    "id": "AECOPD-9.2.1",
+                    "label": "离院方式选择?",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [{
+                            "value": "a",
+                            "name": "医嘱离院"
+                        },
+                        {
+                            "value": "b",
+                            "name": "医嘱转院"
+                        },
+                        {
+                            "value": "c",
+                            "name": "医嘱转社区卫生服务机构/乡镇卫生院"
+                        },
+                        {
+                            "value": "d",
+                            "name": "非医嘱离院"
+                        },
+                        {
+                            "value": "e",
+                            "name": "死亡"
+                        }
+                    ]
+                },
+                "AECOPD-9.2.2": {
+                    "id": "AECOPD-9.2.2",
+                    "label": "死亡可能涉及因素?",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [{
+                            "value": "a",
+                            "name": "死亡与AECOPD有直接关系"
+                        },
+                        {
+                            "value": "b",
+                            "name": "死亡与AECOPD有间接关系"
+                        },
+                        {
+                            "value": "c",
+                            "name": "死亡与AECOPD无关，即死于不相关的疾病，如癌症或其他意外"
+                        },
+                        {
+                            "value": "UTD",
+                            "name": "无法确定或无记录"
+                        }
+                    ]
+                }
+            }
+        },
+        "AECOPD-9.3": {
+            "tips": "数据收集问题：在在住院病历首页中提取住院费用的各项信息？",
+            "id": "AECOPD-9.3",
+            "label": "3.住院费用（元）",
+            "fields": {
+                "AECOPD-9.3.1": {
+                    "id": "AECOPD-9.3",
+                    "label": "住院总费用",
+                    "fieldtype": "人民币（元）",
+                    "fieldsize": "8",
+                    "limits": "1"
+                },
+                "AECOPD-9.3.2": {
+                    "id": "AECOPD-9.3",
+                    "label": "其中, 1.西药费",
+                    "fieldtype": "人民币（元）",
+                    "fieldsize": "8",
+                    "limits": "1"
+                },
+                "AECOPD-9.3.3": {
+                    "id": "AECOPD-9.3",
+                    "label": "其中, 2.中药费",
+                    "fieldtype": "人民币（元）",
+                    "fieldsize": "8",
+                    "limits": "1"
+                },
+                "AECOPD-9.3.4": {
+                    "id": "AECOPD-9.3",
+                    "label": "其中, 3.血液和血液制品类",
+                    "fieldtype": "人民币（元）",
+                    "fieldsize": "8",
+                    "limits": "1"
+                },
+                "AECOPD-9.3.5": {
+                    "id": "AECOPD-9.3",
+                    "label": "其中, 4.手术、介入治疗项目费",
+                    "fieldtype": "人民币（元）",
+                    "fieldsize": "8",
+                    "limits": "1"
+                },
+                "AECOPD-9.3.6": {
+                    "id": "AECOPD-9.3",
+                    "label": "其中, 5.手术、介入治疗用一次性医用材料费",
+                    "fieldtype": "人民币（元）",
+                    "fieldsize": "8",
+                    "limits": "1"
+                }
+            }
+        },
+        "AECOPD-10.1": {
+            "tips": "数据收集问题：从出院时，实施患者对服务的体验与评价表中获取的信息？",
+            "id": "AECOPD-10.1",
+            "label": "出院时实施患者对服务的体验与评价(源自出院时“患者对服务的体验与评价”调查表)",
+            "fields": {
+                "AECOPD-10.1": {
+                    "id": "AECOPD-10.1",
+                    "label": "①入住病房时护士以口头形式或书面形式主动向您介绍住院环境和注意事项",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [{
+                            "value": "a",
+                            "name": "很满意"
+                        },
+                        {
+                            "value": "b",
+                            "name": "较满意"
+                        },
+                        {
+                            "value": "c",
+                            "name": "很满意"
+                        },
+                        {
+                            "value": "d",
+                            "name": "不满意"
+                        },
+                        {
+                            "value": "e",
+                            "name": "很不满意"
+                        }
+                    ]
+                },
+                "AECOPD-10.2": {
+                    "id": "AECOPD-10.2",
+                    "label": "②医生诊断后是否主动告知您治疗的方案、预期结果及预计费用",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [{
+                            "value": "a",
+                            "name": "很满意"
+                        },
+                        {
+                            "value": "b",
+                            "name": "较满意"
+                        },
+                        {
+                            "value": "c",
+                            "name": "很满意"
+                        },
+                        {
+                            "value": "d",
+                            "name": "不满意"
+                        },
+                        {
+                            "value": "e",
+                            "name": "很不满意"
+                        }
+                    ]
+                },
+                "AECOPD-10.3": {
+                    "id": "AECOPD-10.3",
+                    "label": "③您对医院住院病房与床单的清洁、舒适程度的评价",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [{
+                            "value": "a",
+                            "name": "很满意"
+                        },
+                        {
+                            "value": "b",
+                            "name": "较满意"
+                        },
+                        {
+                            "value": "c",
+                            "name": "很满意"
+                        },
+                        {
+                            "value": "d",
+                            "name": "不满意"
+                        },
+                        {
+                            "value": "e",
+                            "name": "很不满意"
+                        }
+                    ]
+                },
+                "AECOPD-10.4": {
+                    "id": "AECOPD-10.4",
+                    "label": "④您对医院住院病房的生活环境方便程度的评价",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [{
+                            "value": "a",
+                            "name": "很满意"
+                        },
+                        {
+                            "value": "b",
+                            "name": "较满意"
+                        },
+                        {
+                            "value": "c",
+                            "name": "很满意"
+                        },
+                        {
+                            "value": "d",
+                            "name": "不满意"
+                        },
+                        {
+                            "value": "e",
+                            "name": "很不满意"
+                        }
+                    ]
+                },
+                "AECOPD-10.5": {
+                    "id": "AECOPD-10.5",
+                    "label": "⑤您对医院住院病房提供的膳食满意程度的评价",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [{
+                            "value": "a",
+                            "name": "很满意"
+                        },
+                        {
+                            "value": "b",
+                            "name": "较满意"
+                        },
+                        {
+                            "value": "c",
+                            "name": "很满意"
+                        },
+                        {
+                            "value": "d",
+                            "name": "不满意"
+                        },
+                        {
+                            "value": "e",
+                            "name": "很不满意"
+                        }
+                    ]
+                },
+                "AECOPD-10.6": {
+                    "id": "AECOPD-10.6",
+                    "label": "⑥您经过本次治疗后对病痛减轻与生活质量改善程度的评价",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [{
+                            "value": "a",
+                            "name": "很满意"
+                        },
+                        {
+                            "value": "b",
+                            "name": "较满意"
+                        },
+                        {
+                            "value": "c",
+                            "name": "很满意"
+                        },
+                        {
+                            "value": "d",
+                            "name": "不满意"
+                        },
+                        {
+                            "value": "e",
+                            "name": "很不满意"
+                        }
+                    ]
+                },
+                "AECOPD-10.7": {
+                    "id": "AECOPD-10.7",
+                    "label": "⑦对医生向您提供本次所患疾病相关的防治与康复知识的满意程度的评价",
+                    "fieldtype": "字母",
+                    "fieldsize": "1",
+                    "limits": "1",
+                    "options": [{
+                            "value": "a",
+                            "name": "很满意"
+                        },
+                        {
+                            "value": "b",
+                            "name": "较满意"
+                        },
+                        {
+                            "value": "c",
+                            "name": "很满意"
+                        },
+                        {
+                            "value": "d",
+                            "name": "不满意"
+                        },
+                        {
+                            "value": "e",
+                            "name": "很不满意"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,1521 @@
+
+<html>
+<head>
+<link href="https://cdn.bootcss.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+<h1></h1>
+
+<div>
+    <label>Username</label>
+</div>
+
+
+<div class="field">
+    <input type="text" name="user" value="" />
+</div>
+
+
+<div>
+    <label>Password</label>
+</div>
+
+
+<div class="field">
+    <input type="password" name="pass" value="" />
+</div>
+
+<div>
+
+    
+        <h1 style="color:red">适用的ICD-10编码与疾病名称</h1>
+    
+    
+    
+        <li>质控医师</li>
+        
+        <div>
+            <div class="row">
+                <div class="col-md-6 form-item">
+                    <div class="form-group check-box form-group-sm">
+                        <label for="dateAndTime" class="col-md-4 control-label">发生日期时间</label>
+                        <div class="col-md-6">
+                            <input required readonly id="dateAndTime" name="adverseEventsReportedInfo[dateAndTime]"
+                                   class="form-control workinput wicon"
+                                   type="text">
+                        </div>
+                        <div class="col-md-2">
+                            <p id="dateAndTimeFormate" style="line-height: 30px;text-align: left;"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    
+        <li>质控护士</li>
+        
+        <div>
+            <div class="row">
+                <div class="col-md-6 form-item">
+                    <div class="form-group check-box form-group-sm">
+                        <label for="dateAndTime" class="col-md-4 control-label">发生日期时间</label>
+                        <div class="col-md-6">
+                            <input required readonly id="dateAndTime" name="adverseEventsReportedInfo[dateAndTime]"
+                                   class="form-control workinput wicon"
+                                   type="text">
+                        </div>
+                        <div class="col-md-2">
+                            <p id="dateAndTimeFormate" style="line-height: 30px;text-align: left;"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    
+        <li>质控审核医师(是指上级医师,如，主治医师或者副主任医师)</li>
+        
+        <div>
+            <div class="row">
+                <div class="col-md-6 form-item">
+                    <div class="form-group check-box form-group-sm">
+                        <label for="dateAndTime" class="col-md-4 control-label">发生日期时间</label>
+                        <div class="col-md-6">
+                            <input required readonly id="dateAndTime" name="adverseEventsReportedInfo[dateAndTime]"
+                                   class="form-control workinput wicon"
+                                   type="text">
+                        </div>
+                        <div class="col-md-2">
+                            <p id="dateAndTimeFormate" style="line-height: 30px;text-align: left;"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    
+
+    
+    
+    
+        <li>患者病案号</li>
+        
+        <div>
+            <div class="row">
+                <div class="col-md-6 form-item">
+                    <div class="form-group check-box form-group-sm">
+                        <label for="dateAndTime" class="col-md-4 control-label">发生日期时间</label>
+                        <div class="col-md-6">
+                            <input required readonly id="dateAndTime" name="adverseEventsReportedInfo[dateAndTime]"
+                                   class="form-control workinput wicon"
+                                   type="text">
+                        </div>
+                        <div class="col-md-2">
+                            <p id="dateAndTimeFormate" style="line-height: 30px;text-align: left;"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    
+
+    
+    
+    
+        <li>主要诊断ICD-10（4位亚目）编码与名称 (质量控制病历提取唯一依据)</li>
+        
+    
+
+    
+        <h1 style="color:red">相关日期时间信息</h1>
+    
+    
+    
+        <li>出生日期</li>
+        
+    
+
+    
+    
+    
+        <li>发病日期</li>
+        
+    
+        <li>发病时间</li>
+        
+    
+        <li>无法确定发病日期时间</li>
+        
+        <div>
+            <div class="row">
+                <div class="col-md-6 form-item">
+                    <div class="form-group check-box form-group-sm">
+                        <label for="dateAndTime" class="col-md-4 control-label">发生日期时间</label>
+                        <div class="col-md-6">
+                            <input required readonly id="dateAndTime" name="adverseEventsReportedInfo[dateAndTime]"
+                                   class="form-control workinput wicon"
+                                   type="text">
+                        </div>
+                        <div class="col-md-2">
+                            <p id="dateAndTimeFormate" style="line-height: 30px;text-align: left;"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    
+
+    
+    
+    
+        <li>到达本院急诊或门诊日期</li>
+        
+    
+        <li>到达本院急诊或门诊时间</li>
+        
+    
+
+    
+    
+    
+        <li>入院日期</li>
+        
+    
+        <li>入院时间</li>
+        
+    
+
+    
+    
+    
+        <li>出院日期</li>
+        
+    
+
+    
+        <h1 style="color:red">其他诊疗信息</h1>
+    
+    
+    
+        <li>费用支付方式</li>
+        
+    
+        <li>收入住院途径</li>
+        
+    
+        <li>到院交通工具</li>
+        
+    
+
+    
+        <h1 style="color:red">患者院前急救处理信息   (可选项目!    与到院交通工具 选择 ”a.救护”者直接关联)</h1>
+    
+    
+    
+        <li>现场评估生命体征，施行急救</li>
+        
+    
+        <li>到达现场后10分钟内完成心电图检查</li>
+        
+    
+        <li>现场急救维持生命体征稳定</li>
+        
+    
+        <li>对持续胸痛＞15分钟和心电图ST段抬高无禁忌症的患者，即刻给予阿司匹林300mg顿服，如可能加服氯吡格雷300mg</li>
+        
+    
+        <li>利用救护车中车载信息系统、微信、彩信等多种形式传输心电图等院前信息至目标医院</li>
+        
+    
+
+    
+        <h1 style="color:red">到达医院后即刻使用阿司匹林(有禁忌者应给予氯吡格雷)</h1>
+    
+    
+        <h3 style="color:blue">急诊或入院后首次心电图（ECG）检查（Ⅰ级推荐</h3>
+    
+    
+        <li>实施首次心电图（ECG）检查?</li>
+        
+    
+        <li>心电图（ECG）检查结果报告日期</li>
+        
+    
+        <li>心电图（ECG）检查结果报告时间</li>
+        
+    
+        <li>心电图（ECG）检查结果选择</li>
+        
+    
+
+    
+    
+        <h3 style="color:blue">到达医院后即刻使用阿司匹林(有禁忌者应给予氯吡格雷)</h3>
+    
+    
+        <li>有阿司匹林禁忌证?</li>
+        
+    
+        <li>阿司匹林禁忌证</li>
+        
+    
+
+    
+    
+    
+        <li>首剂给予负荷量的双联抗血小板药物</li>
+        
+    
+
+    
+    
+    
+        <li>用药日期</li>
+        
+    
+        <li>用药时间</li>
+        
+    
+
+    
+    
+        <h3 style="color:blue"> 首次心脏标志物检测项目选择</h3>
+    
+    
+        <li>实施首次心脏标志物检测?</li>
+        
+    
+        <li>首次心脏标志物检测结果报告日期</li>
+        
+    
+        <li>首次心脏标志物检测结果报告日期</li>
+        
+    
+
+    
+    
+    
+        <li>肌钙蛋白T（TnT）检测值</li>
+        
+    
+        <li>肌钙蛋白I（TnI）检测值</li>
+        
+    
+        <li>肌酸激酶同工酶（CK-MB）检测值</li>
+        
+    
+        <li>心肌肌红蛋白（Myo）检测值</li>
+        
+    
+        <li>谷草转氨酶(GOT/AST)</li>
+        
+    
+        <li>乳酸脱氢酶(LDH)</li>
+        
+    
+        <li>羟丁酸脱氢酶(HDBD)</li>
+        
+    
+
+    
+        <h1 style="color:red">实施左心室功能评价</h1>
+    
+    
+        <h3 style="color:blue">X线胸片检查（首次）</h3>
+    
+    
+        <li>实施首次X线胸片检查?</li>
+        
+    
+
+    
+    
+    
+        <li>报告日期</li>
+        
+    
+        <li>报告时间</li>
+        
+    
+
+    
+    
+    
+        <li>肺淤血或肺水肿？</li>
+        
+    
+
+    
+    
+        <h3 style="color:blue">首次/入院时超声心动图(CDFA)检查</h3>
+    
+    
+        <li>实施首次超声心动图(CDFA)检查?</li>
+        
+    
+
+    
+    
+    
+        <li>报告日期</li>
+        
+    
+        <li>报告时间</li>
+        
+    
+
+    
+    
+    
+        <li>左室射血分（LVEF）测量值</li>
+        
+        <div>
+            <div class="row">
+                <div class="col-md-6 form-item">
+                    <div class="form-group check-box form-group-sm">
+                        <label for="dateAndTime" class="col-md-4 control-label">发生日期时间</label>
+                        <div class="col-md-6">
+                            <input required readonly id="dateAndTime" name="adverseEventsReportedInfo[dateAndTime]"
+                                   class="form-control workinput wicon"
+                                   type="text">
+                        </div>
+                        <div class="col-md-2">
+                            <p id="dateAndTimeFormate" style="line-height: 30px;text-align: left;"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    
+        <li>LVEF≤40%？</li>
+        
+    
+        <li>左室舒张末径（LVEDd）数值</li>
+        
+        <div>
+            <div class="row">
+                <div class="col-md-6 form-item">
+                    <div class="form-group check-box form-group-sm">
+                        <label for="dateAndTime" class="col-md-4 control-label">发生日期时间</label>
+                        <div class="col-md-6">
+                            <input required readonly id="dateAndTime" name="adverseEventsReportedInfo[dateAndTime]"
+                                   class="form-control workinput wicon"
+                                   type="text">
+                        </div>
+                        <div class="col-md-2">
+                            <p id="dateAndTimeFormate" style="line-height: 30px;text-align: left;"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    
+        <li>左室室壁瘤？</li>
+        
+    
+
+    
+    
+        <h3 style="color:blue">危险评估与分值</h3>
+    
+    
+        <li>实施 GRACE危险评分评估?</li>
+        
+    
+        <li>评估日期</li>
+        
+    
+        <li>评估时间</li>
+        
+    
+        <li>实施首次 GRACE危险评分值</li>
+        
+        <div>
+            <div class="row">
+                <div class="col-md-6 form-item">
+                    <div class="form-group check-box form-group-sm">
+                        <label for="dateAndTime" class="col-md-4 control-label">发生日期时间</label>
+                        <div class="col-md-6">
+                            <input required readonly id="dateAndTime" name="adverseEventsReportedInfo[dateAndTime]"
+                                   class="form-control workinput wicon"
+                                   type="text">
+                        </div>
+                        <div class="col-md-2">
+                            <p id="dateAndTimeFormate" style="line-height: 30px;text-align: left;"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    
+        <li>GRACE危险评估分层的选择</li>
+        
+    
+
+    
+    
+    
+        <li>实施TIMI危险分层评估?</li>
+        
+    
+        <li>评估日期</li>
+        
+    
+        <li>评估时间</li>
+        
+    
+        <li>实施首次TIMI危险分层分值</li>
+        
+        <div>
+            <div class="row">
+                <div class="col-md-6 form-item">
+                    <div class="form-group check-box form-group-sm">
+                        <label for="dateAndTime" class="col-md-4 control-label">发生日期时间</label>
+                        <div class="col-md-6">
+                            <input required readonly id="dateAndTime" name="adverseEventsReportedInfo[dateAndTime]"
+                                   class="form-control workinput wicon"
+                                   type="text">
+                        </div>
+                        <div class="col-md-2">
+                            <p id="dateAndTimeFormate" style="line-height: 30px;text-align: left;"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    
+        <li>TIMI危险分层的选择</li>
+        
+    
+
+    
+    
+    
+        <li>实施 CRUSADE出血风险评分?</li>
+        
+    
+        <li>评估日期</li>
+        
+    
+        <li>评估时间</li>
+        
+    
+        <li>实施首次 CRUSADE出血风险评分值</li>
+        
+        <div>
+            <div class="row">
+                <div class="col-md-6 form-item">
+                    <div class="form-group check-box form-group-sm">
+                        <label for="dateAndTime" class="col-md-4 control-label">发生日期时间</label>
+                        <div class="col-md-6">
+                            <input required readonly id="dateAndTime" name="adverseEventsReportedInfo[dateAndTime]"
+                                   class="form-control workinput wicon"
+                                   type="text">
+                        </div>
+                        <div class="col-md-2">
+                            <p id="dateAndTimeFormate" style="line-height: 30px;text-align: left;"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    
+        <li>CRUSADE出血风险评分分层的选择</li>
+        
+    
+
+    
+        <h1 style="color:red">发病时间评估</h1>
+    
+    
+        <h3 style="color:blue">发病时间评估</h3>
+    
+    
+        <li>发病时间评估结论</li>
+        
+    
+
+    
+    
+    
+        <li>实施再灌注治疗?</li>
+        
+    
+
+    
+    
+        <h3 style="color:blue">溶栓于到达医院30分钟内实施（有适应症，无禁忌症）★</h3>
+    
+    
+        <li>实施溶栓治疗?</li>
+        
+    
+
+    
+    
+    
+        <li>STEMI溶栓适应证</li>
+        
+    
+
+    
+    
+    
+        <li>溶栓治疗绝对禁忌症</li>
+        
+    
+        <li>溶栓治疗相对禁忌症</li>
+        
+    
+
+    
+    
+    
+        <li>溶栓药</li>
+        
+    
+
+    
+    
+    
+        <li>开始日期</li>
+        
+    
+        <li>开始时间</li>
+        
+    
+
+    
+    
+    
+        <li>完成时间</li>
+        
+    
+
+    
+    
+    
+        <li>到达医院至溶栓时间（D2N）？</li>
+        
+        <div>
+            <div class="row">
+                <div class="col-md-6 form-item">
+                    <div class="form-group check-box form-group-sm">
+                        <label for="dateAndTime" class="col-md-4 control-label">发生日期时间</label>
+                        <div class="col-md-6">
+                            <input required readonly id="dateAndTime" name="adverseEventsReportedInfo[dateAndTime]"
+                                   class="form-control workinput wicon"
+                                   type="text">
+                        </div>
+                        <div class="col-md-2">
+                            <p id="dateAndTimeFormate" style="line-height: 30px;text-align: left;"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    
+
+    
+    
+    
+        <li>血管再通间接标准的选择</li>
+        
+    
+
+    
+    
+    
+        <li>溶栓治疗并发症的选择</li>
+        
+    
+
+    
+    
+    
+        <li>溶栓治疗延迟原因</li>
+        
+    
+
+    
+    
+        <h3 style="color:blue">PCI于到达医院90分钟内实施（有适应症，无禁忌症）★</h3>
+    
+    
+        <li>实施 PCI治疗?</li>
+        
+    
+
+    
+    
+    
+        <li>A. 直接PCI适应证</li>
+        
+    
+        <li>B. 或者，溶栓后PCI适应证（补救性PCI）</li>
+        
+    
+
+    
+    
+    
+        <li>开始日期</li>
+        
+    
+        <li>开始时间</li>
+        
+    
+
+    
+    
+    
+        <li>完成时间</li>
+        
+    
+
+    
+    
+    
+        <li>进门至球囊扩张（D2B）时间（分钟）</li>
+        
+        <div>
+            <div class="row">
+                <div class="col-md-6 form-item">
+                    <div class="form-group check-box form-group-sm">
+                        <label for="dateAndTime" class="col-md-4 control-label">发生日期时间</label>
+                        <div class="col-md-6">
+                            <input required readonly id="dateAndTime" name="adverseEventsReportedInfo[dateAndTime]"
+                                   class="form-control workinput wicon"
+                                   type="text">
+                        </div>
+                        <div class="col-md-2">
+                            <p id="dateAndTimeFormate" style="line-height: 30px;text-align: left;"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    
+
+    
+    
+    
+        <li>治疗延迟原因选择</li>
+        
+    
+
+    
+    
+    
+        <li>心脏团队讨论决策模式的选择（限于复杂3支或复杂左主干病变病例，为必填项）</li>
+        
+    
+
+    
+    
+    
+        <li>主要病变血管的选择</li>
+        
+    
+
+    
+    
+    
+        <li>主要病变血管狭窄程度的选择</li>
+        
+    
+
+    
+    
+    
+        <li>PCI治疗主要靶血管的选择</li>
+        
+    
+
+    
+    
+    
+        <li>PCI术后即刻主要靶血管TIMI血流分级的选择</li>
+        
+    
+
+    
+    
+    
+        <li>ICD-9-CM-3编码与名称的选择</li>
+        
+    
+
+    
+    
+    
+        <li>治疗血管的数量的选择</li>
+        
+    
+
+    
+    
+    
+        <li>置入血管支架的数量的选择</li>
+        
+    
+
+    
+    
+    
+        <li>近期主要并发症的选择</li>
+        
+    
+
+    
+    
+    
+        <li>近期并发症治疗主要措施的选择</li>
+        
+    
+
+    
+    
+    
+        <li>实施CathPCI风险评估?</li>
+        
+    
+
+    
+    
+    
+        <li>总分值</li>
+        
+        <div>
+            <div class="row">
+                <div class="col-md-6 form-item">
+                    <div class="form-group check-box form-group-sm">
+                        <label for="dateAndTime" class="col-md-4 control-label">发生日期时间</label>
+                        <div class="col-md-6">
+                            <input required readonly id="dateAndTime" name="adverseEventsReportedInfo[dateAndTime]"
+                                   class="form-control workinput wicon"
+                                   type="text">
+                        </div>
+                        <div class="col-md-2">
+                            <p id="dateAndTimeFormate" style="line-height: 30px;text-align: left;"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    
+        <li>院内患者死亡风险</li>
+        
+        <div>
+            <div class="row">
+                <div class="col-md-6 form-item">
+                    <div class="form-group check-box form-group-sm">
+                        <label for="dateAndTime" class="col-md-4 control-label">发生日期时间</label>
+                        <div class="col-md-6">
+                            <input required readonly id="dateAndTime" name="adverseEventsReportedInfo[dateAndTime]"
+                                   class="form-control workinput wicon"
+                                   type="text">
+                        </div>
+                        <div class="col-md-2">
+                            <p id="dateAndTimeFormate" style="line-height: 30px;text-align: left;"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    
+        <li>年龄</li>
+        
+    
+        <li>心源性休克</li>
+        
+    
+        <li>CHF</li>
+        
+    
+        <li>周围血管病</li>
+        
+    
+        <li>慢性肺部疾病</li>
+        
+    
+        <li>NYHA  Ⅳ级</li>
+        
+    
+        <li>肾小球滤过率</li>
+        
+    
+        <li>PCI-STEMI</li>
+        
+    
+        <li>PCI-非STEMI</li>
+        
+    
+
+    
+    
+        <h3 style="color:blue">需要急诊PCI患者，但（本院）无条件实施时，应立即将患者转往有条件行PCI的医院</h3>
+    
+    
+        <li>转院：医院自身原因</li>
+        
+    
+        <li>转院：患者自身原因转院</li>
+        
+    
+
+    
+    
+    
+        <li>转院类型及适应症</li>
+        
+    
+
+    
+    
+    
+        <li>开始日期</li>
+        
+    
+        <li>开始时间</li>
+        
+    
+
+    
+    
+    
+        <li>到医院就诊至转出时间（DI-DO）</li>
+        
+        <div>
+            <div class="row">
+                <div class="col-md-6 form-item">
+                    <div class="form-group check-box form-group-sm">
+                        <label for="dateAndTime" class="col-md-4 control-label">发生日期时间</label>
+                        <div class="col-md-6">
+                            <input required readonly id="dateAndTime" name="adverseEventsReportedInfo[dateAndTime]"
+                                   class="form-control workinput wicon"
+                                   type="text">
+                        </div>
+                        <div class="col-md-2">
+                            <p id="dateAndTimeFormate" style="line-height: 30px;text-align: left;"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    
+
+    
+        <h1 style="color:red">到达医院后即刻使用β阻滞剂（无禁忌症者）</h1>
+    
+    
+    
+        <li>有β-受体阻滞剂禁忌证?</li>
+        
+    
+        <li>β-受体阻滞剂禁忌证</li>
+        
+    
+        <li>β-受体阻滞剂相对禁忌证</li>
+        
+    
+
+    
+    
+    
+        <li>使用首剂β-受体阻滞剂</li>
+        
+    
+
+    
+    
+    
+        <li>用药日期</li>
+        
+    
+        <li>用药时间</li>
+        
+    
+
+    
+        <h1 style="color:red">住院期间有使用阿司匹林、β阻滞剂、ACEI/ARB、他汀类药物记录（无禁忌症者）</h1>
+    
+    
+        <h3 style="color:blue">住院期间长期医嘱中有使用阿司匹林记录（无禁忌症者）</h3>
+    
+    
+        <li>抗血小板药物用药长期医嘱?</li>
+        
+    
+
+    
+    
+    
+        <li>抗血小板药物品名的选择</li>
+        
+    
+
+    
+    
+        <h3 style="color:blue">住院期间有使用β阻滞剂药物记录（无禁忌症者）</h3>
+    
+    
+        <li>β阻滞剂用药长期医嘱?</li>
+        
+    
+
+    
+    
+    
+        <li>长期医嘱中使用β-受体阻滞剂品名的选择</li>
+        
+    
+
+    
+    
+        <h3 style="color:blue">住院期间有使用ACEI/ARB药物记录（无禁忌症者）</h3>
+    
+    
+        <li>有ACEI抑制剂/ ARB类药物禁忌证?</li>
+        
+    
+        <li>ACE抑制剂/ARB类药物禁忌证的选择</li>
+        
+    
+
+    
+    
+    
+        <li>有ACEI抑制剂/ ARB类药物长期医嘱?</li>
+        
+    
+
+    
+    
+    
+        <li>A. 使用ACE抑制剂药物品名的选择</li>
+        
+    
+
+    
+    
+    
+        <li>B. 使用ARB类药物品名的选择</li>
+        
+    
+
+    
+    
+        <h3 style="color:blue">住院期间有使用他汀类药物记录（无禁忌症者）</h3>
+    
+    
+        <li>他汀类药禁忌证?</li>
+        
+    
+        <li>他汀类药物禁忌证的选择</li>
+        
+    
+
+    
+    
+    
+        <li>用药长期医嘱?</li>
+        
+    
+
+    
+    
+    
+        <li>给予他汀类药物品名的选择</li>
+        
+    
+
+    
+        <h1 style="color:red">出院时继续使用阿司匹林、β-阻滞剂、ACEI/ARB、他汀类药物有明示（无禁忌症者）</h1>
+    
+    
+        <h3 style="color:blue">出院时继续有使用阿司匹林记录（无禁忌症者）</h3>
+    
+    
+        <li>出院带药医嘱-抗血小板药物?</li>
+        
+    
+
+    
+    
+        <h3 style="color:blue">出院时继续使用β阻滞剂药物记录（无禁忌症者）</h3>
+    
+    
+        <li>出院带药医嘱-β阻滞剂?</li>
+        
+    
+
+    
+    
+        <h3 style="color:blue">出院时继续使用ACEI/ARB药物记录（无禁忌症者）</h3>
+    
+    
+        <li>出院带药医嘱-ACEI抑制剂/ ARB类药物医嘱?</li>
+        
+    
+
+    
+    
+        <h3 style="color:blue">出院时继续使用他汀类药物记录（无禁忌症者）</h3>
+    
+    
+        <li>出院带药医嘱-他汀类药物医嘱?</li>
+        
+    
+
+    
+        <h1 style="color:red">血脂评价与管理</h1>
+    
+    
+    
+        <li>血脂评价时间的选择</li>
+        
+    
+
+    
+    
+    
+        <li>血脂评价结果</li>
+        
+    
+
+    
+    
+    
+        <li>他汀类药物禁忌证的选择</li>
+        
+    
+
+    
+    
+    
+        <li>用药长期医嘱?</li>
+        
+    
+
+    
+    
+    
+        <li>出院带药医嘱-他汀类药物医嘱?</li>
+        
+    
+
+    
+        <h1 style="color:red">健康（戒烟）辅导</h1>
+    
+    
+        <h3 style="color:blue">健康（戒烟）辅导</h3>
+    
+    
+        <li>吸烟史</li>
+        
+    
+
+    
+    
+    
+        <li>吸烟程度评估有记录</li>
+        
+    
+
+    
+    
+    
+        <li>接受戒烟的建议或者戒烟治疗有记录</li>
+        
+    
+
+    
+    
+        <h3 style="color:blue">控制危险因素</h3>
+    
+    
+        <li>（主要）危险因素的评估</li>
+        
+    
+
+    
+    
+    
+        <li>实施针对控制危险因素评估结果的教育</li>
+        
+    
+
+    
+    
+        <h3 style="color:blue">坚持二级预防（血运重建后长期生活方式和危险因素的控制计划）</h3>
+    
+    
+        <li>二级预防 (至少选择三项方可合格)</li>
+        
+    
+
+    
+    
+        <h3 style="color:blue">履行出院教育与告知五项要素</h3>
+    
+    
+        <li>1.交与患者“出院小结”的副本告知患者出院时风险因素</li>
+        
+    
+        <li>2.出院带药</li>
+        
+    
+        <li>3.告知发生紧急情况时求援救治途径</li>
+        
+    
+        <li>4.出院时教育与随访</li>
+        
+    
+        <li>5.告知何为风险因素与紧急情况</li>
+        
+    
+
+    
+        <h1 style="color:red">住院天数与费用、离院方式</h1>
+    
+    
+        <h3 style="color:blue">住院天数与费用、离院方式</h3>
+    
+    
+        <li>入院日期</li>
+        
+    
+        <li>出院日期</li>
+        
+    
+        <li>住院天数</li>
+        
+        <div>
+            <div class="row">
+                <div class="col-md-6 form-item">
+                    <div class="form-group check-box form-group-sm">
+                        <label for="dateAndTime" class="col-md-4 control-label">发生日期时间</label>
+                        <div class="col-md-6">
+                            <input required readonly id="dateAndTime" name="adverseEventsReportedInfo[dateAndTime]"
+                                   class="form-control workinput wicon"
+                                   type="text">
+                        </div>
+                        <div class="col-md-2">
+                            <p id="dateAndTimeFormate" style="line-height: 30px;text-align: left;"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    
+
+    
+    
+    
+        <li>离院方式选择?</li>
+        
+    
+        <li>死亡可能涉及因素?</li>
+        
+    
+
+    
+    
+    
+        <li>住院总费用</li>
+        
+        <div>
+            <div class="row">
+                <div class="col-md-6 form-item">
+                    <div class="form-group check-box form-group-sm">
+                        <label for="dateAndTime" class="col-md-4 control-label">发生日期时间</label>
+                        <div class="col-md-6">
+                            <input required readonly id="dateAndTime" name="adverseEventsReportedInfo[dateAndTime]"
+                                   class="form-control workinput wicon"
+                                   type="text">
+                        </div>
+                        <div class="col-md-2">
+                            <p id="dateAndTimeFormate" style="line-height: 30px;text-align: left;"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    
+        <li>其中, 西药费</li>
+        
+        <div>
+            <div class="row">
+                <div class="col-md-6 form-item">
+                    <div class="form-group check-box form-group-sm">
+                        <label for="dateAndTime" class="col-md-4 control-label">发生日期时间</label>
+                        <div class="col-md-6">
+                            <input required readonly id="dateAndTime" name="adverseEventsReportedInfo[dateAndTime]"
+                                   class="form-control workinput wicon"
+                                   type="text">
+                        </div>
+                        <div class="col-md-2">
+                            <p id="dateAndTimeFormate" style="line-height: 30px;text-align: left;"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    
+        <li>其中, 中药费</li>
+        
+        <div>
+            <div class="row">
+                <div class="col-md-6 form-item">
+                    <div class="form-group check-box form-group-sm">
+                        <label for="dateAndTime" class="col-md-4 control-label">发生日期时间</label>
+                        <div class="col-md-6">
+                            <input required readonly id="dateAndTime" name="adverseEventsReportedInfo[dateAndTime]"
+                                   class="form-control workinput wicon"
+                                   type="text">
+                        </div>
+                        <div class="col-md-2">
+                            <p id="dateAndTimeFormate" style="line-height: 30px;text-align: left;"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    
+        <li>其中, 血液和血液制品类</li>
+        
+        <div>
+            <div class="row">
+                <div class="col-md-6 form-item">
+                    <div class="form-group check-box form-group-sm">
+                        <label for="dateAndTime" class="col-md-4 control-label">发生日期时间</label>
+                        <div class="col-md-6">
+                            <input required readonly id="dateAndTime" name="adverseEventsReportedInfo[dateAndTime]"
+                                   class="form-control workinput wicon"
+                                   type="text">
+                        </div>
+                        <div class="col-md-2">
+                            <p id="dateAndTimeFormate" style="line-height: 30px;text-align: left;"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    
+        <li>其中, 手术、介入治疗项目费</li>
+        
+        <div>
+            <div class="row">
+                <div class="col-md-6 form-item">
+                    <div class="form-group check-box form-group-sm">
+                        <label for="dateAndTime" class="col-md-4 control-label">发生日期时间</label>
+                        <div class="col-md-6">
+                            <input required readonly id="dateAndTime" name="adverseEventsReportedInfo[dateAndTime]"
+                                   class="form-control workinput wicon"
+                                   type="text">
+                        </div>
+                        <div class="col-md-2">
+                            <p id="dateAndTimeFormate" style="line-height: 30px;text-align: left;"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    
+        <li>其中, 手术、介入治疗用一次性医用材料费</li>
+        
+        <div>
+            <div class="row">
+                <div class="col-md-6 form-item">
+                    <div class="form-group check-box form-group-sm">
+                        <label for="dateAndTime" class="col-md-4 control-label">发生日期时间</label>
+                        <div class="col-md-6">
+                            <input required readonly id="dateAndTime" name="adverseEventsReportedInfo[dateAndTime]"
+                                   class="form-control workinput wicon"
+                                   type="text">
+                        </div>
+                        <div class="col-md-2">
+                            <p id="dateAndTimeFormate" style="line-height: 30px;text-align: left;"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    
+
+    
+    
+        <h3 style="color:blue">出院前危险性评估</h3>
+    
+    
+        <li>出院时状态评估结果的选择</li>
+        
+    
+
+    
+    
+    
+        <li>A.末次评估GRACE危险评分值</li>
+        
+    
+        <li>B. 末次评估CathPCI风险评分值</li>
+        
+    
+
+    
+        <h1 style="color:red">患者对服务的体验与评价</h1>
+    
+    
+    
+        <li>①入住病房时护士以口头形式或书面形式主动向您介绍住院环境和注意事项</li>
+        
+    
+        <li>②医生诊断后是否主动告知您治疗的方案、预期结果及预计费用</li>
+        
+    
+        <li>③您对医院住院病房与床单的清洁、舒适程度的评价</li>
+        
+    
+        <li>④您对医院住院病房的生活环境方便程度的评价</li>
+        
+    
+        <li>⑤您对医院住院病房提供的膳食满意程度的评价</li>
+        
+    
+        <li>⑥您经过本次治疗后对病痛减轻与生活质量改善程度的评价</li>
+        
+    
+        <li>⑦对医生向您提供本次所患疾病相关的防治与康复知识的满意程度的评价</li>
+        
+    
+
+</div>
+<p class="form-tit">发生不良事件/错误的名称</p>
+<div class="form-radio">
+    <label style="width:22%;margin-left: 10px;" class="radio-inline">
+        <input required type="radio" name="adverseEventContent[adverseEventOrWrongName]" value="处方/用药医嘱错误">
+        处方/用药医嘱错误
+    </label>
+    <label style="width:22%" class="radio-inline">
+        <input required type="radio" name="adverseEventContent[adverseEventOrWrongName]" value="药品准备错误">
+        药品准备错误
+    </label>
+    <label style="width:22%" class="radio-inline">
+        <input required type="radio" name="adverseEventContent[adverseEventOrWrongName]" value="药品用法错误">药品用法错误
+    </label>
+    <label style="width:22%" class="radio-inline">
+        <input required type="radio" name="adverseEventContent[adverseEventOrWrongName]" value="配与管理错误">配与管理错误
+    </label>
+    <label style="width:22%" class="radio-inline">
+        <input required type="radio" name="adverseEventContent[adverseEventOrWrongName]" value="药物不良反应">药物不良反应
+    </label>
+    <script class="selected-radio-tmpl" type="text/html">
+        <div class="selected-radio">
+            <div class="form-group check-box">
+                <label class="col-md-2 control-label">处方/用药医嘱错误</label>
+                <div class="col-md-10">
+                    <select required class="form-control"
+                            name="adverseEventContent[adverseEventOrWrongNameSelection]"
+                            style="width:230px">
+                        <option value="-1">选择处方/用药医嘱错误</option>
+                        <option value="口头处方/用药医嘱">口头处方/用药医嘱</option>
+                        <option value="口头变更处方/用药医嘱">口头变更处方/用药医嘱</option>
+                        <option value="手写处方/用药医嘱字跡潦草不清">手写处方/用药医嘱字跡潦草不清</option>
+                        <option value="处方/用药医嘱变更字跡潦草不清">处方/用药医嘱变更字跡潦草不清</option>
+                        <option value="处方/医嘱无用法">处方/医嘱无用法</option>
+                        <option value="处方/医嘱剂量单位不正确">处方/医嘱剂量单位不正确</option>
+                        <option value="使用不正确的缩写/略语">使用不正确的缩写/略语</option>
+                        <option value="其他">其他</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </script>
+    <script class="selected-radio-tmpl" type="text/html">
+        <div class="selected-radio">
+            <div class="form-group check-box">
+                <label class="col-md-2 control-label">药品准备错误</label>
+                <div class="col-md-10">
+                    <select required class="form-control"
+                            name="adverseEventContent[adverseEventOrWrongNameSelection]"
+                            style="width:230px">
+                        <option value="药品准备错误">药品准备错误</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </script>
+    <script class="selected-radio-tmpl" type="text/html">
+        <div class="selected-radio">
+            <div class="form-group check-box">
+                <label class="col-md-2 control-label">药品用法错误</label>
+                <div class="col-md-10">
+                    <select required class="form-control"
+                            name="adverseEventContent[adverseEventOrWrongNameSelection]"
+                            style="width:230px">
+                        <option value="-1">选择药品用法错误</option>
+                        <option value="皮下注射">皮下注射</option>
+                        <option value="肌肉注射">肌肉注射</option>
+                        <option value="静脉注射">静脉注射</option>
+                        <option value="动脉注射">动脉注射</option>
+                        <option value="周围静脉滴注">周围静脉滴注</option>
+                        <option value="中心周围静脉滴注">中心周围静脉滴注</option>
+                        <option value="外用">外用</option>
+                        <option value="口服">口服</option>
+                        <option value="直肠内用药">直肠内用药</option>
+                        <option value="滴眼、滴耳、滴鼻">滴眼、滴耳、滴鼻</option>
+                        <option value="其他用法">其他用法</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </script>
+    <script class="selected-radio-tmpl" type="text/html">
+        <div class="selected-radio">
+            <div class="form-group check-box">
+                <label class="col-md-2 control-label">调配与管理错误</label>
+                <div class="col-md-10">
+                    <select required class="form-control"
+                            name="adverseEventContent[adverseEventOrWrongNameSelection]"
+                            style="width:230px">
+                        <option value="-1">选择调配与管理错误</option>
+                        <option value="内服药调配与管理">内服药调配与管理</option>
+                        <option value="外用药调配与管理">外用药调配与管理</option>
+                        <option value="注射药调配与管理">注射药调配与管理</option>
+                        <option value="血液制剂管理">血液制剂管理</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </script>
+    <script class="selected-radio-tmpl" type="text/html">
+        <div class="selected-radio">
+            <div class="form-group check-box">
+                <label class="col-md-2 control-label">药物不良反应</label>
+                <div class="col-md-10">
+                    <select required class="form-control"
+                            name="adverseEventContent[adverseEventOrWrongNameSelection]"
+                            style="width:230px">
+                        <option value="-1">选择药物不良反应</option>
+                        <option value="药品不良反应">药品不良反应</option>
+                        <option value="用药错误">用药错误</option>
+                        <option value="药品质量问题">药品质量问题</option>
+                        <option value="其他">其他</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </script>
+</div>
+<div>copyright</div>
+<script>
+$(function(){
+$(document).on("change", ".form-radio input:radio", function () {
+        var label = $(this).parent();
+        label.siblings(".selected-radio").remove();
+        label.parent().append(label.siblings(".selected-radio-tmpl").eq(label.index()).html())
+    });
+})
+    
+</script>
+</body>

@@ -1,7 +1,5 @@
-module.exports = class book {
-  
-    name: string,
-  
-    coordinates: string,
-  
-}
+<html><body>
+<h1>{{ id }}</h1>
+<p>bla bla bla...</p>
+<div>copyright</div>
+</body>
